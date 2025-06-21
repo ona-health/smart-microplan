@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="ExampleSiteBeta"/>
+  <meta>
+    <profile value="http://smart.who.int/microplan/StructureDefinition/microplan-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location ExampleSiteBeta</b></p><a name="ExampleSiteBeta"> </a><a name="hcExampleSiteBeta"> </a><a name="ExampleSiteBeta-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-microplan-location.html">Microplan Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Site Beta — Riverside Ward 3</p><p><b>type</b>: <span title="Codes:{http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS vaccination-site}">Vaccination Site</span></p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>36.825</td><td>-1.295</td></tr></table><p><b>partOf</b>: <a href="Location-ExampleFacility.html">Location Riverside Health Center</a></p></div>
+  </text>
+  <status value="active"/>
+  <name value="Site Beta — Riverside Ward 3"/>
+  <type>
+    <coding>
+      <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+      <code value="vaccination-site"/>
+      <display value="Vaccination Site"/>
+    </coding>
+  </type>
+  <position>
+    <longitude value="36.825"/>
+    <latitude value="-1.295"/>
+  </position>
+  <partOf>
+    <reference value="Location/ExampleFacility"/>
+  </partOf>
+</Location>

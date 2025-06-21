@@ -1,0 +1,138 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "microplan-plandefinition",
+  "url": "http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition",
+  "name": "MicroplanPlanDefinition",
+  "title": "Microplan PlanDefinition",
+  "status": "draft",
+  "experimental": false,
+  "description": "A campaign template that defines activities and which location hierarchy levels they target.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition.title",
+        "path": "PlanDefinition.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.type",
+        "path": "PlanDefinition.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.status",
+        "path": "PlanDefinition.status",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.description",
+        "path": "PlanDefinition.description",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.goal",
+        "path": "PlanDefinition.goal",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action",
+        "path": "PlanDefinition.action",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.extension",
+        "path": "PlanDefinition.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.action.extension:targetLocationType",
+        "path": "PlanDefinition.action.extension",
+        "sliceName": "targetLocationType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://smart.who.int/microplan/StructureDefinition/TargetLocationType"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.title",
+        "path": "PlanDefinition.action.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.description",
+        "path": "PlanDefinition.action.description",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.relatedAction",
+        "path": "PlanDefinition.action.relatedAction",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.participant",
+        "path": "PlanDefinition.action.participant",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.definition[x]",
+        "path": "PlanDefinition.action.definition[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.definition[x]:definitionCanonical",
+        "path": "PlanDefinition.action.definition[x]",
+        "sliceName": "definitionCanonical",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+              "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

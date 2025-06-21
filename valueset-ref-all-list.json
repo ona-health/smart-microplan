@@ -1,0 +1,635 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-cardinality-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionCardinalityBehavior",
+      "title" : "ActionCardinalityBehavior",
+      "description" : "Defines behavior for an action or a group for how many times that item may be repeated.",
+      "systems" : ["http://hl7.org/fhir/action-cardinality-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.807"],
+      "sources" : ["2.16.840.1.113883.4.642.3.807"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-condition-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionConditionKind",
+      "title" : "ActionConditionKind",
+      "description" : "Defines the kinds of conditions that can appear on actions.",
+      "systems" : ["http://hl7.org/fhir/action-condition-kind"],
+      "oids" : ["2.16.840.1.113883.4.642.3.815"],
+      "sources" : ["2.16.840.1.113883.4.642.3.815"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-grouping-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionGroupingBehavior",
+      "title" : "ActionGroupingBehavior",
+      "description" : "Defines organization behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-grouping-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.799"],
+      "sources" : ["2.16.840.1.113883.4.642.3.799"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionParticipantRole",
+      "title" : "Action participant role",
+      "description" : "Either a practitioner role or a relationship type.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.796"],
+      "sources" : ["2.16.840.1.113883.4.642.3.796"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionParticipantType",
+      "title" : "ActionParticipantType",
+      "description" : "The type of participant for the action.",
+      "systems" : ["http://hl7.org/fhir/action-participant-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.811"],
+      "sources" : ["2.16.840.1.113883.4.642.3.811"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-precheck-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionPrecheckBehavior",
+      "title" : "ActionPrecheckBehavior",
+      "description" : "Defines selection frequency behavior for an action or group.",
+      "systems" : ["http://hl7.org/fhir/action-precheck-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.805"],
+      "sources" : ["2.16.840.1.113883.4.642.3.805"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionRelationshipType",
+      "title" : "ActionRelationshipType",
+      "description" : "Defines the types of relationships between actions.",
+      "systems" : ["http://hl7.org/fhir/action-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.813"],
+      "sources" : ["2.16.840.1.113883.4.642.3.813"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-required-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionRequiredBehavior",
+      "title" : "ActionRequiredBehavior",
+      "description" : "Defines expectations around whether an action or action group is required.",
+      "systems" : ["http://hl7.org/fhir/action-required-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.803"],
+      "sources" : ["2.16.840.1.113883.4.642.3.803"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-selection-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionSelectionBehavior",
+      "title" : "ActionSelectionBehavior",
+      "description" : "Defines selection behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-selection-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.801"],
+      "sources" : ["2.16.840.1.113883.4.642.3.801"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionType",
+      "title" : "ActionType",
+      "description" : "The type of action to be performed.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/action-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.809"],
+      "sources" : ["2.16.840.1.113883.4.642.3.809"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan",
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-location.html" : "Microplan Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/definition-topic",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DefinitionTopic",
+      "title" : "DefinitionTopic",
+      "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/definition-topic"],
+      "oids" : ["2.16.840.1.113883.4.642.3.794"],
+      "sources" : ["2.16.840.1.113883.4.642.3.794"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalCategory",
+      "title" : "Goal category",
+      "description" : "Example codes for grouping goals to use for filtering or presentation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.275"],
+      "sources" : ["2.16.840.1.113883.4.642.3.275"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalPriority",
+      "title" : "Goal priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.273"],
+      "sources" : ["2.16.840.1.113883.4.642.3.273"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-start-event",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalStartEvent",
+      "title" : "Goal start event",
+      "description" : "Identifies types of events that might trigger the start of a goal.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.279"],
+      "sources" : ["2.16.840.1.113883.4.642.3.279"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/group-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GroupType",
+      "title" : "GroupType",
+      "description" : "Types of resources that are part of group.",
+      "systems" : ["http://hl7.org/fhir/group-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.284"],
+      "sources" : ["2.16.840.1.113883.4.642.3.284"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-target-population.html" : "Microplan Target Population"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Jurisdiction ValueSet",
+      "title" : "Jurisdiction",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan",
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition",
+      "StructureDefinition-microplan-location.html" : "Microplan Location",
+      "StructureDefinition-microplan-task.html" : "Microplan Task",
+      "StructureDefinition-microplan-target-population.html" : "Microplan Target Population"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "systems" : ["http://hl7.org/fhir/location-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.330"],
+      "sources" : ["2.16.840.1.113883.4.642.3.330"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-location.html" : "Microplan Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-location.html" : "Microplan Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "systems" : ["http://hl7.org/fhir/location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.332"],
+      "sources" : ["2.16.840.1.113883.4.642.3.332"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-location.html" : "Microplan Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-task.html" : "Microplan Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/plan-definition-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PlanDefinitionType",
+      "title" : "PlanDefinitionType",
+      "description" : "The type of PlanDefinition.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/plan-definition-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.797"],
+      "sources" : ["2.16.840.1.113883.4.642.3.797"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition",
+      "StructureDefinition-microplan-task.html" : "Microplan Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-careplan.html" : "Microplan CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/subject-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubjectType",
+      "title" : "Subject type",
+      "description" : "Possible types of subjects.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.775"],
+      "sources" : ["2.16.840.1.113883.4.642.3.775"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-plandefinition.html" : "Microplan PlanDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "TaskCode",
+      "title" : "Task Codes",
+      "description" : "Codes indicating the type of action that is expected to be performed",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/task-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1396"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-task.html" : "Microplan Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskIntent",
+      "title" : "TaskIntent",
+      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+      "systems" : [
+        "http://hl7.org/fhir/request-intent",
+        "http://hl7.org/fhir/task-intent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1240"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-task.html" : "Microplan Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "systems" : ["http://hl7.org/fhir/task-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.790"],
+      "sources" : ["2.16.840.1.113883.4.642.3.790"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-task.html" : "Microplan Task"
+    },
+    {
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanActivityTypeVS",
+      "title" : "Microplan Activity Type ValueSet",
+      "description" : "Types of activities performed during an immunization campaign.",
+      "systems" : [
+        "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanLocationTypeVS",
+      "title" : "Microplan Location Type ValueSet",
+      "description" : "Administrative levels in the immunization campaign location hierarchy.",
+      "systems" : [
+        "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TargetLocationType.html" : "Target Location Type",
+      "StructureDefinition-microplan-location.html" : "Microplan Location"
+    },
+    {
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanParticipantRoleVS",
+      "title" : "Microplan Participant Role ValueSet",
+      "description" : "Roles of participants in immunization campaign activities.",
+      "systems" : [
+        "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"
+      ]
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Hl7VSBedStatus",
+      "title" : "hl7VS-bedStatus",
+      "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+      "oids" : ["2.16.840.1.113883.21.51"],
+      "sources" : ["2.16.840.1.113883.21.51"],
+      "uses" : {
+      },
+      "StructureDefinition-microplan-location.html" : "Microplan Location"
+    }
+  ]
+}

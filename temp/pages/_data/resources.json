@@ -1,0 +1,632 @@
+{
+  "ImplementationGuide/smart.who.int.microplan" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "/Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ImplementationGuide-smart.who.int.microplan.json",
+    "sourceTail" : "ImplementationGuide-smart.who.int.microplan.json",
+    "path" : "index.html",
+    "url" : "http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan",
+    "version" : "0.1.0",
+    "name" : "Microplan",
+    "title" : "WHO SMART Microplan Implementation Guide (DRAFT)",
+    "titlelang" : {
+    },
+    "date" : "2025-06-21",
+    "description" : "FHIR Implementation Guide for immunization campaign microplanning, supporting campaign definition, task generation, and execution tracking.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "ActivityDefinition/CoverageMonitoring" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/ActivityDefinition-CoverageMonitoring.json",
+    "sourceTail" : "ActivityDefinition-CoverageMonitoring.json",
+    "path" : "ActivityDefinition-CoverageMonitoring.html",
+    "url" : "http://smart.who.int/microplan/ActivityDefinition/CoverageMonitoring",
+    "version" : "0.1.0",
+    "title" : "Rapid Coverage Monitoring",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2025-06-21",
+    "description" : "Post-campaign rapid coverage assessment at health facility catchment area level.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "ActivityDefinition/PolioVaccinationSession" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/ActivityDefinition-PolioVaccinationSession.json",
+    "sourceTail" : "ActivityDefinition-PolioVaccinationSession.json",
+    "path" : "ActivityDefinition-PolioVaccinationSession.html",
+    "url" : "http://smart.who.int/microplan/ActivityDefinition/PolioVaccinationSession",
+    "version" : "0.1.0",
+    "title" : "Polio Vaccination Session",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2025-06-21",
+    "description" : "Administer bivalent oral polio vaccine (bOPV) to all children 0–59 months at a vaccination site.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "ActivityDefinition/SupervisionVisit" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/ActivityDefinition-SupervisionVisit.json",
+    "sourceTail" : "ActivityDefinition-SupervisionVisit.json",
+    "path" : "ActivityDefinition-SupervisionVisit.html",
+    "url" : "http://smart.who.int/microplan/ActivityDefinition/SupervisionVisit",
+    "version" : "0.1.0",
+    "title" : "Supervision Visit",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2025-06-21",
+    "description" : "Supervisory visit to monitor and support campaign execution at the district level.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "CarePlan/ExampleCarePlan" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 4,
+    "source" : "fsh-generated/resources/CarePlan-ExampleCarePlan.json",
+    "sourceTail" : "CarePlan-ExampleCarePlan.json",
+    "path" : "CarePlan-ExampleCarePlan.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "CodeSystem/MicroplanActivityTypeCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "fsh-generated/resources/CodeSystem-MicroplanActivityTypeCS.json",
+    "sourceTail" : "CodeSystem-MicroplanActivityTypeCS.json",
+    "path" : "CodeSystem-MicroplanActivityTypeCS.html",
+    "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS",
+    "version" : "0.1.0",
+    "name" : "MicroplanActivityTypeCS",
+    "title" : "Microplan Activity Type CodeSystem",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Types of activities performed during an immunization campaign.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "CodeSystem/MicroplanLocationTypeCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "fsh-generated/resources/CodeSystem-MicroplanLocationTypeCS.json",
+    "sourceTail" : "CodeSystem-MicroplanLocationTypeCS.json",
+    "path" : "CodeSystem-MicroplanLocationTypeCS.html",
+    "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+    "version" : "0.1.0",
+    "name" : "MicroplanLocationTypeCS",
+    "title" : "Microplan Location Type CodeSystem",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Administrative levels in the immunization campaign location hierarchy.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "CodeSystem/MicroplanParticipantRoleCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "fsh-generated/resources/CodeSystem-MicroplanParticipantRoleCS.json",
+    "sourceTail" : "CodeSystem-MicroplanParticipantRoleCS.json",
+    "path" : "CodeSystem-MicroplanParticipantRoleCS.html",
+    "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+    "version" : "0.1.0",
+    "name" : "MicroplanParticipantRoleCS",
+    "title" : "Microplan Participant Role CodeSystem",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Roles of participants in immunization campaign activities.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "Group/ExamplePopulationDistrict" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 8,
+    "source" : "fsh-generated/resources/Group-ExamplePopulationDistrict.json",
+    "sourceTail" : "Group-ExamplePopulationDistrict.json",
+    "path" : "Group-ExamplePopulationDistrict.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Group/ExamplePopulationSiteAlpha" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 9,
+    "source" : "fsh-generated/resources/Group-ExamplePopulationSiteAlpha.json",
+    "sourceTail" : "Group-ExamplePopulationSiteAlpha.json",
+    "path" : "Group-ExamplePopulationSiteAlpha.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Group/ExamplePopulationSiteBeta" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 10,
+    "source" : "fsh-generated/resources/Group-ExamplePopulationSiteBeta.json",
+    "sourceTail" : "Group-ExamplePopulationSiteBeta.json",
+    "path" : "Group-ExamplePopulationSiteBeta.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Location/ExampleCountry" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 11,
+    "source" : "fsh-generated/resources/Location-ExampleCountry.json",
+    "sourceTail" : "Location-ExampleCountry.json",
+    "path" : "Location-ExampleCountry.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Location/ExampleDistrict" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 12,
+    "source" : "fsh-generated/resources/Location-ExampleDistrict.json",
+    "sourceTail" : "Location-ExampleDistrict.json",
+    "path" : "Location-ExampleDistrict.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Location/ExampleFacility" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 13,
+    "source" : "fsh-generated/resources/Location-ExampleFacility.json",
+    "sourceTail" : "Location-ExampleFacility.json",
+    "path" : "Location-ExampleFacility.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Location/ExampleProvince" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 14,
+    "source" : "fsh-generated/resources/Location-ExampleProvince.json",
+    "sourceTail" : "Location-ExampleProvince.json",
+    "path" : "Location-ExampleProvince.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Location/ExampleSiteAlpha" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 15,
+    "source" : "fsh-generated/resources/Location-ExampleSiteAlpha.json",
+    "sourceTail" : "Location-ExampleSiteAlpha.json",
+    "path" : "Location-ExampleSiteAlpha.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Location/ExampleSiteBeta" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 16,
+    "source" : "fsh-generated/resources/Location-ExampleSiteBeta.json",
+    "sourceTail" : "Location-ExampleSiteBeta.json",
+    "path" : "Location-ExampleSiteBeta.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "PlanDefinition/PolioSIACampaign" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 17,
+    "source" : "fsh-generated/resources/PlanDefinition-PolioSIACampaign.json",
+    "sourceTail" : "PlanDefinition-PolioSIACampaign.json",
+    "path" : "PlanDefinition-PolioSIACampaign.html",
+    "url" : "http://smart.who.int/microplan/PlanDefinition/PolioSIACampaign",
+    "version" : "0.1.0",
+    "title" : "Polio SIA Campaign",
+    "titlelang" : {
+    },
+    "date" : "2025-06-21",
+    "description" : "Supplementary Immunization Activity for oral polio vaccine (bOPV) targeting children aged 0–59 months.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/CampaignLocation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 18,
+    "source" : "fsh-generated/resources/StructureDefinition-CampaignLocation.json",
+    "sourceTail" : "StructureDefinition-CampaignLocation.json",
+    "path" : "StructureDefinition-CampaignLocation.html",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/CampaignLocation",
+    "version" : "0.1.0",
+    "name" : "CampaignLocation",
+    "title" : "Campaign Location",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Links a resource to a location in the campaign hierarchy.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/TargetLocationType" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 19,
+    "source" : "fsh-generated/resources/StructureDefinition-TargetLocationType.json",
+    "sourceTail" : "StructureDefinition-TargetLocationType.json",
+    "path" : "StructureDefinition-TargetLocationType.html",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/TargetLocationType",
+    "version" : "0.1.0",
+    "name" : "TargetLocationType",
+    "title" : "Target Location Type",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Specifies which level of the location hierarchy a PlanDefinition action targets for Task generation.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/microplan-careplan" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 20,
+    "source" : "fsh-generated/resources/StructureDefinition-microplan-careplan.json",
+    "sourceTail" : "StructureDefinition-microplan-careplan.json",
+    "path" : "StructureDefinition-microplan-careplan.html",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-careplan",
+    "version" : "0.1.0",
+    "name" : "MicroplanCarePlan",
+    "title" : "Microplan CarePlan",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "An instantiated immunization campaign for a specific geographic area and time period.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/microplan-location" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 21,
+    "source" : "fsh-generated/resources/StructureDefinition-microplan-location.json",
+    "sourceTail" : "StructureDefinition-microplan-location.json",
+    "path" : "StructureDefinition-microplan-location.html",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-location",
+    "version" : "0.1.0",
+    "name" : "MicroplanLocation",
+    "title" : "Microplan Location",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "A location in the immunization campaign hierarchy, from country down to vaccination site.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/microplan-plandefinition" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 22,
+    "source" : "fsh-generated/resources/StructureDefinition-microplan-plandefinition.json",
+    "sourceTail" : "StructureDefinition-microplan-plandefinition.json",
+    "path" : "StructureDefinition-microplan-plandefinition.html",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition",
+    "version" : "0.1.0",
+    "name" : "MicroplanPlanDefinition",
+    "title" : "Microplan PlanDefinition",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "A campaign template that defines activities and which location hierarchy levels they target.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/microplan-target-population" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 23,
+    "source" : "fsh-generated/resources/StructureDefinition-microplan-target-population.json",
+    "sourceTail" : "StructureDefinition-microplan-target-population.json",
+    "path" : "StructureDefinition-microplan-target-population.html",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-target-population",
+    "version" : "0.1.0",
+    "name" : "MicroplanTargetPopulation",
+    "title" : "Microplan Target Population",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Estimated target population for vaccination at a specific location.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/microplan-task" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 24,
+    "source" : "fsh-generated/resources/StructureDefinition-microplan-task.json",
+    "sourceTail" : "StructureDefinition-microplan-task.json",
+    "path" : "StructureDefinition-microplan-task.html",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-task",
+    "version" : "0.1.0",
+    "name" : "MicroplanTask",
+    "title" : "Microplan Task",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "A concrete campaign activity assigned to a team at a specific location and time.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "Task/ExampleTaskCoverageMonitoring" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 25,
+    "source" : "fsh-generated/resources/Task-ExampleTaskCoverageMonitoring.json",
+    "sourceTail" : "Task-ExampleTaskCoverageMonitoring.json",
+    "path" : "Task-ExampleTaskCoverageMonitoring.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Task/ExampleTaskSupervision" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 26,
+    "source" : "fsh-generated/resources/Task-ExampleTaskSupervision.json",
+    "sourceTail" : "Task-ExampleTaskSupervision.json",
+    "path" : "Task-ExampleTaskSupervision.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Task/ExampleTaskVaccinationAlpha" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 27,
+    "source" : "fsh-generated/resources/Task-ExampleTaskVaccinationAlpha.json",
+    "sourceTail" : "Task-ExampleTaskVaccinationAlpha.json",
+    "path" : "Task-ExampleTaskVaccinationAlpha.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Task/ExampleTaskVaccinationBeta" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 28,
+    "source" : "fsh-generated/resources/Task-ExampleTaskVaccinationBeta.json",
+    "sourceTail" : "Task-ExampleTaskVaccinationBeta.json",
+    "path" : "Task-ExampleTaskVaccinationBeta.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "ValueSet/MicroplanActivityTypeVS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 29,
+    "source" : "fsh-generated/resources/ValueSet-MicroplanActivityTypeVS.json",
+    "sourceTail" : "ValueSet-MicroplanActivityTypeVS.json",
+    "path" : "ValueSet-MicroplanActivityTypeVS.html",
+    "url" : "http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS",
+    "version" : "0.1.0",
+    "name" : "MicroplanActivityTypeVS",
+    "title" : "Microplan Activity Type ValueSet",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Types of activities performed during an immunization campaign.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/MicroplanLocationTypeVS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 30,
+    "source" : "fsh-generated/resources/ValueSet-MicroplanLocationTypeVS.json",
+    "sourceTail" : "ValueSet-MicroplanLocationTypeVS.json",
+    "path" : "ValueSet-MicroplanLocationTypeVS.html",
+    "url" : "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS",
+    "version" : "0.1.0",
+    "name" : "MicroplanLocationTypeVS",
+    "title" : "Microplan Location Type ValueSet",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Administrative levels in the immunization campaign location hierarchy.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/MicroplanParticipantRoleVS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 31,
+    "source" : "fsh-generated/resources/ValueSet-MicroplanParticipantRoleVS.json",
+    "sourceTail" : "ValueSet-MicroplanParticipantRoleVS.json",
+    "path" : "ValueSet-MicroplanParticipantRoleVS.html",
+    "url" : "http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS",
+    "version" : "0.1.0",
+    "name" : "MicroplanParticipantRoleVS",
+    "title" : "Microplan Participant Role ValueSet",
+    "titlelang" : {
+    },
+    "experimental" : false,
+    "date" : "2026-03-16T13:36:19-04:00",
+    "description" : "Roles of participants in immunization campaign activities.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "WHO",
+      "link" : "http://who.int",
+      "status" : "Draft"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MicroplanParticipantRoleCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MicroplanParticipantRoleCS</b></p><a name="MicroplanParticipantRoleCS"> </a><a name="hcMicroplanParticipantRoleCS"> </a><a name="MicroplanParticipantRoleCS-en-US"> </a><p>This case-sensitive code system <code>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">vaccination-team<a name="MicroplanParticipantRoleCS-vaccination-team"> </a></td><td>Vaccination Team</td><td>Team responsible for administering vaccines at a vaccination site</td></tr><tr><td style="white-space:nowrap">supervisor<a name="MicroplanParticipantRoleCS-supervisor"> </a></td><td>Supervisor</td><td>Person responsible for monitoring and supporting campaign execution</td></tr><tr><td style="white-space:nowrap">monitoring-team<a name="MicroplanParticipantRoleCS-monitoring-team"> </a></td><td>Monitoring Team</td><td>Team responsible for post-campaign rapid coverage assessment</td></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"/>
+  <version value="0.1.0"/>
+  <name value="MicroplanParticipantRoleCS"/>
+  <title value="Microplan Participant Role CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-03-16T13:36:19-04:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Roles of participants in immunization campaign activities."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="vaccination-team"/>
+    <display value="Vaccination Team"/>
+    <definition value="Team responsible for administering vaccines at a vaccination site"/>
+  </concept>
+  <concept>
+    <code value="supervisor"/>
+    <display value="Supervisor"/>
+    <definition value="Person responsible for monitoring and supporting campaign execution"/>
+  </concept>
+  <concept>
+    <code value="monitoring-team"/>
+    <display value="Monitoring Team"/>
+    <definition value="Team responsible for post-campaign rapid coverage assessment"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,47 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='ActivityDefinition' id='SupervisionVisit' active='content' %}
+  <a name="root"> </a>
+
+  <h2 id="root">ActivityDefinition: {{site.data.pages[page.path].title | escape_once}}
+{% if site.data.resources[resource_].experimental == true %}(Experimental){% endif %}
+  </h2>
+
+{% include fragment-resourceTable.html %}
+
+{%if site.data.resources[resource_].description %}
+<p>
+{{site.data.resources[resource_].description|markdownify}}
+</p>
+{% endif %}
+{%if site.data.resources[resource_].purpose %}
+<p>
+{{site.data.resources[resource_].purpose|markdownify}}
+</p>
+{% endif %}
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='ActivityDefinition' id='SupervisionVisit' %}
+
+<!--  <p>
+  Formats: <a href="ActivityDefinition-SupervisionVisit.xml.html">XML</a>, <a href="ActivityDefinition-SupervisionVisit.json.html">JSON</a>, <a href="ActivityDefinition-SupervisionVisit.ttl.html">Turtle</a>
+  </p>-->
+{% unless example %}
+  {% if 'ActivityDefinition' == 'CapabilityStatement' %}
+  <p>
+      <a href="SupervisionVisit.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="SupervisionVisit.openapi.json" download>Download</a>
+  </p>
+  {% endif %}
+{% endunless %}
+
+  {% include ActivityDefinition-SupervisionVisit-html.xhtml %}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='ActivityDefinition' id='SupervisionVisit' %}
+
+  {%include ActivityDefinition-SupervisionVisit-history.xhtml%}
+
+</div>
+{% include fragment-pageend.html %}

@@ -1,0 +1,94 @@
+Microplan : Validation Results
+=========================================
+
+err = 1, warn = 12, info = 8
+IG Publisher Version: 2.0.6 Out of date - current version is 2.1.2
+Generated Mon Mar 16 13:37:00 EDT 2026. FHIR version 4.0.1 for smart.who.int.microplan#0.1.0 (canonical = http://smart.who.int/microplan)
+ Build Errors : 1 / 4 / 0
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ActivityDefinition-CoverageMonitoring : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ActivityDefinition-PolioVaccinationSession : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ActivityDefinition-SupervisionVisit : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/CarePlan-ExampleCarePlan : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/CodeSystem-MicroplanActivityTypeCS : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/CodeSystem-MicroplanLocationTypeCS : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/CodeSystem-MicroplanParticipantRoleCS : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Group-ExamplePopulationDistrict : 0 / 2 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Group-ExamplePopulationSiteAlpha : 0 / 2 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Group-ExamplePopulationSiteBeta : 0 / 2 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ImplementationGuide-smart.who.int.microplan : 0 / 1 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Location-ExampleCountry : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Location-ExampleDistrict : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Location-ExampleFacility : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Location-ExampleProvince : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Location-ExampleSiteAlpha : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Location-ExampleSiteBeta : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/PlanDefinition-PolioSIACampaign : 0 / 0 / 8
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/StructureDefinition-CampaignLocation : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/StructureDefinition-TargetLocationType : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/StructureDefinition-microplan-careplan : 0 / 0 / 2
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/StructureDefinition-microplan-location : 0 / 1 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/StructureDefinition-microplan-plandefinition : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/StructureDefinition-microplan-target-population : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/StructureDefinition-microplan-task : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Task-ExampleTaskCoverageMonitoring : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Task-ExampleTaskSupervision : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Task-ExampleTaskVaccinationAlpha : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/Task-ExampleTaskVaccinationBeta : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ValueSet-MicroplanActivityTypeVS : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ValueSet-MicroplanLocationTypeVS : 0 / 0 / 1
+ /Volumes/Biliba/github/smart-microplan/fsh-generated/resources/ValueSet-MicroplanParticipantRoleVS : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[24].value: Supressed messages file not found
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ActivityDefinition-CoverageMonitoring.json ==
+== fsh-generated/resources/ActivityDefinition-PolioVaccinationSession.json ==
+== fsh-generated/resources/ActivityDefinition-SupervisionVisit.json ==
+== fsh-generated/resources/CarePlan-ExampleCarePlan.json ==
+== fsh-generated/resources/CodeSystem-MicroplanActivityTypeCS.json ==
+== fsh-generated/resources/CodeSystem-MicroplanLocationTypeCS.json ==
+== fsh-generated/resources/CodeSystem-MicroplanParticipantRoleCS.json ==
+== fsh-generated/resources/Group-ExamplePopulationDistrict.json ==
+WARNING: Group/ExamplePopulationDistrict: Group.characteristic[0].value.ofType(Range).low: Unable to validate code 'mo' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
+WARNING: Group/ExamplePopulationDistrict: Group.characteristic[0].value.ofType(Range).high: Unable to validate code 'mo' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
+== fsh-generated/resources/Group-ExamplePopulationSiteAlpha.json ==
+WARNING: Group/ExamplePopulationSiteAlpha: Group.characteristic[0].value.ofType(Range).low: Unable to validate code 'mo' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
+WARNING: Group/ExamplePopulationSiteAlpha: Group.characteristic[0].value.ofType(Range).high: Unable to validate code 'mo' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
+== fsh-generated/resources/Group-ExamplePopulationSiteBeta.json ==
+WARNING: Group/ExamplePopulationSiteBeta: Group.characteristic[0].value.ofType(Range).low: Unable to validate code 'mo' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
+WARNING: Group/ExamplePopulationSiteBeta: Group.characteristic[0].value.ofType(Range).high: Unable to validate code 'mo' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
+== fsh-generated/resources/ImplementationGuide-smart.who.int.microplan.json ==
+WARNING: ImplementationGuide/smart.who.int.microplan: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.uv.extensions.r4#5.3.0-ballot-tc1 released on 2025-08-03, but the most recent appropriate version is 0.1.0. This reference is getting old and the more recent version should be considered
+== fsh-generated/resources/Location-ExampleCountry.json ==
+== fsh-generated/resources/Location-ExampleDistrict.json ==
+== fsh-generated/resources/Location-ExampleFacility.json ==
+== fsh-generated/resources/Location-ExampleProvince.json ==
+== fsh-generated/resources/Location-ExampleSiteAlpha.json ==
+== fsh-generated/resources/Location-ExampleSiteBeta.json ==
+== fsh-generated/resources/PlanDefinition-PolioSIACampaign.json ==
+INFORMATION: PlanDefinition/PolioSIACampaign: PlanDefinition.action[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS|0.1.0
+INFORMATION: PlanDefinition/PolioSIACampaign: PlanDefinition.action[0].participant[0].role: Reference to draft CodeSystem http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS|0.1.0
+INFORMATION: PlanDefinition/PolioSIACampaign: PlanDefinition.action[1].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS|0.1.0
+INFORMATION: PlanDefinition/PolioSIACampaign: PlanDefinition.action[1].participant[0].role: Reference to draft CodeSystem http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS|0.1.0
+INFORMATION: PlanDefinition/PolioSIACampaign: PlanDefinition.action[2].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS|0.1.0
+INFORMATION: PlanDefinition/PolioSIACampaign: PlanDefinition.action[2].participant[0].role: Reference to draft CodeSystem http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS|0.1.0
+INFORMATION: Resource: The resource PlanDefinition/PolioSIACampaign could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-CampaignLocation.json ==
+== fsh-generated/resources/StructureDefinition-TargetLocationType.json ==
+== fsh-generated/resources/StructureDefinition-microplan-careplan.json ==
+INFORMATION: StructureDefinition/microplan-careplan: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note Use additionalBinding extension or element instead
+== fsh-generated/resources/StructureDefinition-microplan-location.json ==
+WARNING: StructureDefinition/microplan-location: StructureDefinition.snapshot.element[11].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0116'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v2-0116' to 'http://terminology.hl7.org/ValueSet/v2-0116|3.0.0'
+== fsh-generated/resources/StructureDefinition-microplan-plandefinition.json ==
+== fsh-generated/resources/StructureDefinition-microplan-target-population.json ==
+== fsh-generated/resources/StructureDefinition-microplan-task.json ==
+== fsh-generated/resources/Task-ExampleTaskCoverageMonitoring.json ==
+== fsh-generated/resources/Task-ExampleTaskSupervision.json ==
+== fsh-generated/resources/Task-ExampleTaskVaccinationAlpha.json ==
+== fsh-generated/resources/Task-ExampleTaskVaccinationBeta.json ==
+== fsh-generated/resources/ValueSet-MicroplanActivityTypeVS.json ==
+== fsh-generated/resources/ValueSet-MicroplanLocationTypeVS.json ==
+== fsh-generated/resources/ValueSet-MicroplanParticipantRoleVS.json ==

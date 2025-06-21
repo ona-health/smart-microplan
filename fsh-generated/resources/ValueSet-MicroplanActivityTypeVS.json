@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MicroplanActivityTypeVS",
+  "id": "MicroplanActivityTypeVS",
+  "title": "Microplan Activity Type ValueSet",
+  "description": "Types of activities performed during an immunization campaign.",
+  "url": "http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"
+      }
+    ]
+  }
+}

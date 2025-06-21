@@ -1,0 +1,29 @@
+{
+  "resourceType": "Location",
+  "id": "ExampleSiteAlpha",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+    ]
+  },
+  "name": "Site Alpha — Riverside Market",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "vaccination-site",
+          "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "display": "Vaccination Site"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "partOf": {
+    "reference": "Location/ExampleFacility"
+  },
+  "position": {
+    "latitude": -1.2921,
+    "longitude": 36.8219
+  }
+}

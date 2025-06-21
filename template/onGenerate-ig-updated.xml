@@ -1,0 +1,1198 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="smart.who.int.microplan"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p class="res-header-id">
+            <b>Generated Narrative: ImplementationGuide smart.who.int.microplan</b>
+         </p>
+         <a name="smart.who.int.microplan"> </a>
+         <a name="hcsmart.who.int.microplan"> </a>
+         <a name="smart.who.int.microplan-en-US"> </a>
+         <h2>Microplan</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan</pre>
+         <div>
+            <p>FHIR Implementation Guide for immunization campaign microplanning, supporting campaign definition, task generation, and execution tracking.</p>
+         </div>
+      </div>
+   </text>
+   <url value="http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan"/>
+   <version value="0.1.0"/>
+   <name value="Microplan"/>
+   <title value="WHO SMART Microplan Implementation Guide (DRAFT)"/>
+   <status value="draft"/>
+   <date value="2025-06-21"/>
+   <publisher value="WHO"/>
+   <contact>
+      <name value="WHO"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://who.int"/>
+      </telecom>
+   </contact>
+   <description value="FHIR Implementation Guide for immunization campaign microplanning, supporting campaign definition, task generation, and execution tracking."/>
+   <packageId value="smart.who.int.microplan"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="4.0.1"/>
+   <dependsOn id="hl7tx">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+      </extension>
+      <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+      <packageId value="hl7.terminology.r4"/>
+      <version value="7.1.0"/>
+   </dependsOn>
+   <dependsOn id="hl7ext">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+      </extension>
+      <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+      <packageId value="hl7.fhir.uv.extensions.r4"/>
+      <version value="5.3.0-ballot-tc1"/>
+   </dependsOn>
+   <dependsOn id="hl7_fhir_uv_cpg">
+      <uri value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
+      <packageId value="hl7.fhir.uv.cpg"/>
+      <version value="current"/>
+   </dependsOn>
+   <definition>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="copyrightyear"/>
+         </extension>
+         <extension url="value">
+            <valueString value="2025+"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="releaselabel"/>
+         </extension>
+         <extension url="value">
+            <valueString value="ci-build"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="produce-jekyll-data"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="autoload-resources"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-liquid"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template/liquid"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-liquid"/>
+         </extension>
+         <extension url="value">
+            <valueString value="input/liquid"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-qa"/>
+         </extension>
+         <extension url="value">
+            <valueString value="temp/qa"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-temp"/>
+         </extension>
+         <extension url="value">
+            <valueString value="temp/pages"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-output"/>
+         </extension>
+         <extension url="value">
+            <valueString value="output"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-suppressed-warnings"/>
+         </extension>
+         <extension url="value">
+            <valueString value="input/ignoreWarnings.txt"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-history"/>
+         </extension>
+         <extension url="value">
+            <valueString value="http://smart.who.int/microplan/history.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="template-html"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template-page.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="template-md"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template-page-md.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-contact"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-context"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-copyright"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-jurisdiction"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-license"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-publisher"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-version"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-wg"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="active-tables"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="fmm-definition"/>
+         </extension>
+         <extension url="value">
+            <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="propagate-status"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="excludelogbinaryformat"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="tabbed-snapshots"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+         <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+      </extension>
+      <grouping id="-ka-activitydefinition">
+         <name value="Knowledge Artifacts: Activity Definitions"/>
+         <description value="These define activities that can be performed as part of content in this implementation guide."/>
+      </grouping>
+      <grouping id="-ka-plandefinition">
+         <name value="Knowledge Artifacts: Plan Definitions"/>
+         <description value="These define workflows, rules, strategies, or protocols as part of content in this implementation guide."/>
+      </grouping>
+      <grouping id="-str-profile">
+         <name value="Structures: Resource Profiles"/>
+         <description value="These define constraints on FHIR resources for systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-str-extension">
+         <name value="Structures: Extension Definitions"/>
+         <description value="These define constraints on FHIR data types for systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-ex-example">
+         <name value="Example: Example Instances"/>
+         <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like."/>
+      </grouping>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ActivityDefinition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ActivityDefinition-PolioVaccinationSession.html"/>
+         </extension>
+         <reference>
+            <reference value="ActivityDefinition/PolioVaccinationSession"/>
+         </reference>
+         <name value="Polio Vaccination Session"/>
+         <description value="Administer bivalent oral polio vaccine (bOPV) to all children 0–59 months at a vaccination site."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-ka-activitydefinition"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ActivityDefinition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ActivityDefinition-CoverageMonitoring.html"/>
+         </extension>
+         <reference>
+            <reference value="ActivityDefinition/CoverageMonitoring"/>
+         </reference>
+         <name value="Rapid Coverage Monitoring"/>
+         <description value="Post-campaign rapid coverage assessment at health facility catchment area level."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-ka-activitydefinition"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ActivityDefinition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ActivityDefinition-SupervisionVisit.html"/>
+         </extension>
+         <reference>
+            <reference value="ActivityDefinition/SupervisionVisit"/>
+         </reference>
+         <name value="Supervision Visit"/>
+         <description value="Supervisory visit to monitor and support campaign execution at the district level."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-ka-activitydefinition"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="PlanDefinition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="PlanDefinition-PolioSIACampaign.html"/>
+         </extension>
+         <reference>
+            <reference value="PlanDefinition/PolioSIACampaign"/>
+         </reference>
+         <name value="Polio SIA Campaign"/>
+         <description value="Campaign template for a Polio Supplementary Immunization Activity targeting children 0–59 months."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-ka-plandefinition"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-microplan-careplan.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/microplan-careplan"/>
+         </reference>
+         <name value="Microplan CarePlan"/>
+         <description value="An instantiated immunization campaign for a specific geographic area and time period."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-microplan-location.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/microplan-location"/>
+         </reference>
+         <name value="Microplan Location"/>
+         <description value="A location in the immunization campaign hierarchy, from country down to vaccination site."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-microplan-plandefinition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/microplan-plandefinition"/>
+         </reference>
+         <name value="Microplan PlanDefinition"/>
+         <description value="A campaign template that defines activities and which location hierarchy levels they target."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-microplan-target-population.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/microplan-target-population"/>
+         </reference>
+         <name value="Microplan Target Population"/>
+         <description value="Estimated target population for vaccination at a specific location."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-microplan-task.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/microplan-task"/>
+         </reference>
+         <name value="Microplan Task"/>
+         <description value="A concrete campaign activity assigned to a team at a specific location and time."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-CampaignLocation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/CampaignLocation"/>
+         </reference>
+         <name value="Campaign Location"/>
+         <description value="Links a resource to a location in the campaign hierarchy."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-TargetLocationType.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/TargetLocationType"/>
+         </reference>
+         <name value="Target Location Type"/>
+         <description value="Specifies which level of the location hierarchy a PlanDefinition action targets for Task generation."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MicroplanActivityTypeVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MicroplanActivityTypeVS"/>
+         </reference>
+         <name value="Microplan Activity Type ValueSet"/>
+         <description value="Types of activities performed during an immunization campaign."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MicroplanLocationTypeVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MicroplanLocationTypeVS"/>
+         </reference>
+         <name value="Microplan Location Type ValueSet"/>
+         <description value="Administrative levels in the immunization campaign location hierarchy."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MicroplanParticipantRoleVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MicroplanParticipantRoleVS"/>
+         </reference>
+         <name value="Microplan Participant Role ValueSet"/>
+         <description value="Roles of participants in immunization campaign activities."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MicroplanActivityTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MicroplanActivityTypeCS"/>
+         </reference>
+         <name value="Microplan Activity Type CodeSystem"/>
+         <description value="Types of activities performed during an immunization campaign."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MicroplanLocationTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MicroplanLocationTypeCS"/>
+         </reference>
+         <name value="Microplan Location Type CodeSystem"/>
+         <description value="Administrative levels in the immunization campaign location hierarchy."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MicroplanParticipantRoleCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MicroplanParticipantRoleCS"/>
+         </reference>
+         <name value="Microplan Participant Role CodeSystem"/>
+         <description value="Roles of participants in immunization campaign activities."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Task"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Task-ExampleTaskCoverageMonitoring.html"/>
+         </extension>
+         <reference>
+            <reference value="Task/ExampleTaskCoverageMonitoring"/>
+         </reference>
+         <name value="Coverage Monitoring — Riverside Health Center"/>
+         <description value="Post-campaign rapid coverage monitoring at Riverside Health Center catchment."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-task"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-ExampleProvince.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/ExampleProvince"/>
+         </reference>
+         <name value="Eastern Province"/>
+         <description value="Example province-level location."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-location"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-ExampleCountry.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/ExampleCountry"/>
+         </reference>
+         <name value="Example Country"/>
+         <description value="Example country-level location."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-location"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CarePlan"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CarePlan-ExampleCarePlan.html"/>
+         </extension>
+         <reference>
+            <reference value="CarePlan/ExampleCarePlan"/>
+         </reference>
+         <name value="Polio SIA — Riverside District, June 2025"/>
+         <description value="Instantiated Polio SIA campaign for Riverside District."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-careplan"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-ExampleDistrict.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/ExampleDistrict"/>
+         </reference>
+         <name value="Riverside District"/>
+         <description value="Example district-level location."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-location"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-ExampleFacility.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/ExampleFacility"/>
+         </reference>
+         <name value="Riverside Health Center"/>
+         <description value="Example health facility."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-location"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-ExampleSiteAlpha.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/ExampleSiteAlpha"/>
+         </reference>
+         <name value="Site Alpha — Fixed Post"/>
+         <description value="Example fixed-post vaccination site."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-location"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-ExampleSiteBeta.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/ExampleSiteBeta"/>
+         </reference>
+         <name value="Site Beta — House-to-House"/>
+         <description value="Example house-to-house vaccination site area."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-location"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Task"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Task-ExampleTaskSupervision.html"/>
+         </extension>
+         <reference>
+            <reference value="Task/ExampleTaskSupervision"/>
+         </reference>
+         <name value="Supervision Visit — Riverside District, Day 2"/>
+         <description value="Supervisor monitoring visit for Riverside District on campaign day 2."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-task"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Group"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Group-ExamplePopulationDistrict.html"/>
+         </extension>
+         <reference>
+            <reference value="Group/ExamplePopulationDistrict"/>
+         </reference>
+         <name value="Target Population — Riverside District"/>
+         <description value="Aggregate estimated target population for the district campaign area."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-target-population"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Group"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Group-ExamplePopulationSiteAlpha.html"/>
+         </extension>
+         <reference>
+            <reference value="Group/ExamplePopulationSiteAlpha"/>
+         </reference>
+         <name value="Target Population — Site Alpha"/>
+         <description value="Estimated target population of children 0–59 months at Site Alpha."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-target-population"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Group"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Group-ExamplePopulationSiteBeta.html"/>
+         </extension>
+         <reference>
+            <reference value="Group/ExamplePopulationSiteBeta"/>
+         </reference>
+         <name value="Target Population — Site Beta"/>
+         <description value="Estimated target population of children 0–59 months at Site Beta."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-target-population"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Task"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Task-ExampleTaskVaccinationAlpha.html"/>
+         </extension>
+         <reference>
+            <reference value="Task/ExampleTaskVaccinationAlpha"/>
+         </reference>
+         <name value="Vaccination Session — Site Alpha, Day 1"/>
+         <description value="OPV vaccination session at Site Alpha on campaign day 1."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-task"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Task"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Task-ExampleTaskVaccinationBeta.html"/>
+         </extension>
+         <reference>
+            <reference value="Task/ExampleTaskVaccinationBeta"/>
+         </reference>
+         <name value="Vaccination Session — Site Beta, Day 1"/>
+         <description value="OPV vaccination session at Site Beta on campaign day 1."/>
+         <exampleCanonical value="http://smart.who.int/microplan/StructureDefinition/microplan-task"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <page>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="toc.html"/>
+         </extension>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="index.html"/>
+            </extension>
+            <nameUrl value="index.html"/>
+            <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="ActivityDefinition-PolioVaccinationSession.html"/>
+               <title value="Polio Vaccination Session"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ActivityDefinition-CoverageMonitoring.html"/>
+               <title value="Rapid Coverage Monitoring"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ActivityDefinition-SupervisionVisit.html"/>
+               <title value="Supervision Visit"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="PlanDefinition-PolioSIACampaign.html"/>
+               <title value="Polio SIA Campaign"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-microplan-careplan.html"/>
+               <title value="Microplan CarePlan"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-microplan-location.html"/>
+               <title value="Microplan Location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-microplan-plandefinition.html"/>
+               <title value="Microplan PlanDefinition"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-microplan-target-population.html"/>
+               <title value="Microplan Target Population"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-microplan-task.html"/>
+               <title value="Microplan Task"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-CampaignLocation.html"/>
+               <title value="Campaign Location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-TargetLocationType.html"/>
+               <title value="Target Location Type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MicroplanActivityTypeVS.html"/>
+               <title value="Microplan Activity Type ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MicroplanLocationTypeVS.html"/>
+               <title value="Microplan Location Type ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MicroplanParticipantRoleVS.html"/>
+               <title value="Microplan Participant Role ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MicroplanActivityTypeCS.html"/>
+               <title value="Microplan Activity Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MicroplanLocationTypeCS.html"/>
+               <title value="Microplan Location Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MicroplanParticipantRoleCS.html"/>
+               <title value="Microplan Participant Role CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Task-ExampleTaskCoverageMonitoring.html"/>
+               <title value="Coverage Monitoring — Riverside Health Center"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-ExampleProvince.html"/>
+               <title value="Eastern Province"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-ExampleCountry.html"/>
+               <title value="Example Country"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CarePlan-ExampleCarePlan.html"/>
+               <title value="Polio SIA — Riverside District, June 2025"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-ExampleDistrict.html"/>
+               <title value="Riverside District"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-ExampleFacility.html"/>
+               <title value="Riverside Health Center"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-ExampleSiteAlpha.html"/>
+               <title value="Site Alpha — Fixed Post"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-ExampleSiteBeta.html"/>
+               <title value="Site Beta — House-to-House"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Task-ExampleTaskSupervision.html"/>
+               <title value="Supervision Visit — Riverside District, Day 2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Group-ExamplePopulationDistrict.html"/>
+               <title value="Target Population — Riverside District"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Group-ExamplePopulationSiteAlpha.html"/>
+               <title value="Target Population — Site Alpha"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Group-ExamplePopulationSiteBeta.html"/>
+               <title value="Target Population — Site Beta"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Task-ExampleTaskVaccinationAlpha.html"/>
+               <title value="Vaccination Session — Site Alpha, Day 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Task-ExampleTaskVaccinationBeta.html"/>
+               <title value="Vaccination Session — Site Beta, Day 1"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/maps"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/testing"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/history"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="fsh-generated/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2025+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="ci-build"/>
+      </parameter>
+      <parameter>
+         <code value="produce-jekyll-data"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="autoload-resources"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="template/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="input/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="path-history"/>
+         <value value="http://smart.who.int/microplan/history.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-wg"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="fmm-definition"/>
+         <value value="http://hl7.org/fhir/versions.html#maturity"/>
+      </parameter>
+      <parameter>
+         <code value="propagate-status"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="excludelogbinaryformat"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="tabbed-snapshots"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>

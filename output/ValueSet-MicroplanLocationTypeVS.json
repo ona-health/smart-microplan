@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MicroplanLocationTypeVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MicroplanLocationTypeVS</b></p><a name=\"MicroplanLocationTypeVS\"> </a><a name=\"hcMicroplanLocationTypeVS\"> </a><a name=\"MicroplanLocationTypeVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-MicroplanLocationTypeCS.html\"><code>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</code></a></li></ul></div>"
+  },
+  "url" : "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS",
+  "version" : "0.1.0",
+  "name" : "MicroplanLocationTypeVS",
+  "title" : "Microplan Location Type ValueSet",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-03-16T13:36:19-04:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Administrative levels in the immunization campaign location hierarchy.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"
+    }]
+  }
+}

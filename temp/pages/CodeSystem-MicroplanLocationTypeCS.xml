@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MicroplanLocationTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MicroplanLocationTypeCS</b></p><a name="MicroplanLocationTypeCS"> </a><a name="hcMicroplanLocationTypeCS"> </a><a name="MicroplanLocationTypeCS-en-US"> </a><p>This case-sensitive code system <code>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">country<a name="MicroplanLocationTypeCS-country"> </a></td><td>Country</td><td>National level</td></tr><tr><td style="white-space:nowrap">province<a name="MicroplanLocationTypeCS-province"> </a></td><td>Province</td><td>Province or region level</td></tr><tr><td style="white-space:nowrap">district<a name="MicroplanLocationTypeCS-district"> </a></td><td>District</td><td>District level</td></tr><tr><td style="white-space:nowrap">health-facility<a name="MicroplanLocationTypeCS-health-facility"> </a></td><td>Health Facility</td><td>Health facility or health center</td></tr><tr><td style="white-space:nowrap">vaccination-site<a name="MicroplanLocationTypeCS-vaccination-site"> </a></td><td>Vaccination Site</td><td>Point of vaccination delivery (fixed post, transit point, house-to-house team area)</td></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+  <version value="0.1.0"/>
+  <name value="MicroplanLocationTypeCS"/>
+  <title value="Microplan Location Type CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-03-16T13:36:19-04:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Administrative levels in the immunization campaign location hierarchy."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="country"/>
+    <display value="Country"/>
+    <definition value="National level"/>
+  </concept>
+  <concept>
+    <code value="province"/>
+    <display value="Province"/>
+    <definition value="Province or region level"/>
+  </concept>
+  <concept>
+    <code value="district"/>
+    <display value="District"/>
+    <definition value="District level"/>
+  </concept>
+  <concept>
+    <code value="health-facility"/>
+    <display value="Health Facility"/>
+    <definition value="Health facility or health center"/>
+  </concept>
+  <concept>
+    <code value="vaccination-site"/>
+    <display value="Vaccination Site"/>
+    <definition value="Point of vaccination delivery (fixed post, transit point, house-to-house team area)"/>
+  </concept>
+</CodeSystem>

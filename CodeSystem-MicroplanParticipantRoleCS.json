@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "MicroplanParticipantRoleCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MicroplanParticipantRoleCS</b></p><a name=\"MicroplanParticipantRoleCS\"> </a><a name=\"hcMicroplanParticipantRoleCS\"> </a><a name=\"MicroplanParticipantRoleCS-en-US\"> </a><p>This case-sensitive code system <code>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vaccination-team<a name=\"MicroplanParticipantRoleCS-vaccination-team\"> </a></td><td>Vaccination Team</td><td>Team responsible for administering vaccines at a vaccination site</td></tr><tr><td style=\"white-space:nowrap\">supervisor<a name=\"MicroplanParticipantRoleCS-supervisor\"> </a></td><td>Supervisor</td><td>Person responsible for monitoring and supporting campaign execution</td></tr><tr><td style=\"white-space:nowrap\">monitoring-team<a name=\"MicroplanParticipantRoleCS-monitoring-team\"> </a></td><td>Monitoring Team</td><td>Team responsible for post-campaign rapid coverage assessment</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+  "version" : "0.1.0",
+  "name" : "MicroplanParticipantRoleCS",
+  "title" : "Microplan Participant Role CodeSystem",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-03-16T13:36:19-04:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Roles of participants in immunization campaign activities.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "vaccination-team",
+    "display" : "Vaccination Team",
+    "definition" : "Team responsible for administering vaccines at a vaccination site"
+  },
+  {
+    "code" : "supervisor",
+    "display" : "Supervisor",
+    "definition" : "Person responsible for monitoring and supporting campaign execution"
+  },
+  {
+    "code" : "monitoring-team",
+    "display" : "Monitoring Team",
+    "definition" : "Team responsible for post-campaign rapid coverage assessment"
+  }]
+}

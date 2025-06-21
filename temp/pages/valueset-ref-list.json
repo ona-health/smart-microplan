@@ -1,0 +1,41 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanActivityTypeVS",
+      "title" : "Microplan Activity Type ValueSet",
+      "description" : "Types of activities performed during an immunization campaign.",
+      "systems" : [
+        "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanLocationTypeVS",
+      "title" : "Microplan Location Type ValueSet",
+      "description" : "Administrative levels in the immunization campaign location hierarchy.",
+      "systems" : [
+        "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TargetLocationType.html" : "Target Location Type",
+      "StructureDefinition-microplan-location.html" : "Microplan Location"
+    },
+    {
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanParticipantRoleVS",
+      "title" : "Microplan Participant Role ValueSet",
+      "description" : "Roles of participants in immunization campaign activities.",
+      "systems" : [
+        "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"
+      ]
+    }
+  ]
+}

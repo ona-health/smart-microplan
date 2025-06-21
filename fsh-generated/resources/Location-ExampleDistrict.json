@@ -1,0 +1,25 @@
+{
+  "resourceType": "Location",
+  "id": "ExampleDistrict",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+    ]
+  },
+  "name": "Riverside District",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "district",
+          "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "display": "District"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "partOf": {
+    "reference": "Location/ExampleProvince"
+  }
+}

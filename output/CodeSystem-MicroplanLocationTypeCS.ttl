@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MicroplanLocationTypeCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MicroplanLocationTypeCS</b></p><a name=\"MicroplanLocationTypeCS\"> </a><a name=\"hcMicroplanLocationTypeCS\"> </a><a name=\"MicroplanLocationTypeCS-en-US\"> </a><p>This case-sensitive code system <code>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">country<a name=\"MicroplanLocationTypeCS-country\"> </a></td><td>Country</td><td>National level</td></tr><tr><td style=\"white-space:nowrap\">province<a name=\"MicroplanLocationTypeCS-province\"> </a></td><td>Province</td><td>Province or region level</td></tr><tr><td style=\"white-space:nowrap\">district<a name=\"MicroplanLocationTypeCS-district\"> </a></td><td>District</td><td>District level</td></tr><tr><td style=\"white-space:nowrap\">health-facility<a name=\"MicroplanLocationTypeCS-health-facility\"> </a></td><td>Health Facility</td><td>Health facility or health center</td></tr><tr><td style=\"white-space:nowrap\">vaccination-site<a name=\"MicroplanLocationTypeCS-vaccination-site\"> </a></td><td>Vaccination Site</td><td>Point of vaccination delivery (fixed post, transit point, house-to-house team area)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MicroplanLocationTypeCS"] ; # 
+  fhir:title [ fhir:v "Microplan Location Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-03-16T13:36:19-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Administrative levels in the immunization campaign location hierarchy."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "country" ] ;
+     fhir:display [ fhir:v "Country" ] ;
+     fhir:definition [ fhir:v "National level" ]
+  ] [
+     fhir:code [ fhir:v "province" ] ;
+     fhir:display [ fhir:v "Province" ] ;
+     fhir:definition [ fhir:v "Province or region level" ]
+  ] [
+     fhir:code [ fhir:v "district" ] ;
+     fhir:display [ fhir:v "District" ] ;
+     fhir:definition [ fhir:v "District level" ]
+  ] [
+     fhir:code [ fhir:v "health-facility" ] ;
+     fhir:display [ fhir:v "Health Facility" ] ;
+     fhir:definition [ fhir:v "Health facility or health center" ]
+  ] [
+     fhir:code [ fhir:v "vaccination-site" ] ;
+     fhir:display [ fhir:v "Vaccination Site" ] ;
+     fhir:definition [ fhir:v "Point of vaccination delivery (fixed post, transit point, house-to-house team area)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

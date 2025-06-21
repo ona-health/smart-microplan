@@ -1,0 +1,20 @@
+{
+  "url" : "http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan",
+  "name" : "Microplan",
+  "title" : "WHO SMART Microplan Implementation Guide (DRAFT)",
+  "description" : "FHIR Implementation Guide for immunization campaign microplanning, supporting campaign definition, task generation, and execution tracking.",
+  "ig-date" : "2025-06-21",
+  "status" : "draft",
+  "package-id" : "smart.who.int.microplan",
+  "ig-ver" : "0.1.0",
+  "date" : "Mon, 16 Mar, 2026 13:36:37 -0400",
+  "dateISO8601" : "2026-03-16T13:36:37-04:00",
+  "errs" : 1,
+  "warnings" : 12,
+  "hints" : 8,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1292006704
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType": "Task",
+  "id": "ExampleTaskVaccinationBeta",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-task"
+    ]
+  },
+  "status": "requested",
+  "intent": "plan",
+  "basedOn": [
+    {
+      "reference": "CarePlan/ExampleCarePlan"
+    }
+  ],
+  "focus": {
+    "reference": "ActivityDefinition/PolioVaccinationSession"
+  },
+  "for": {
+    "reference": "Group/ExamplePopulationSiteBeta"
+  },
+  "location": {
+    "reference": "Location/ExampleSiteBeta"
+  },
+  "executionPeriod": {
+    "start": "2025-06-21",
+    "end": "2025-06-21"
+  },
+  "input": [
+    {
+      "type": {
+        "text": "vaccine"
+      },
+      "valueString": "bOPV"
+    },
+    {
+      "type": {
+        "text": "target-count"
+      },
+      "valueInteger": 750
+    }
+  ]
+}

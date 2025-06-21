@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - WHO SMART Microplan Implementation Guide (DRAFT) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">WHO SMART Microplan Implementation Guide (DRAFT)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">WHO SMART Microplan Implementation Guide (DRAFT) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://smart.who.int/microplan/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-06-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Microplan</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+  <li><a href="#resource-flow" id="markdown-toc-resource-flow">Resource Flow</a></li>
+  <li><a href="#campaign-activities" id="markdown-toc-campaign-activities">Campaign Activities</a></li>
+  <li><a href="#how-to-use-this-guide" id="markdown-toc-how-to-use-this-guide">How to Use This Guide</a></li>
+  <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+  <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+  <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
+  <li><a href="#activity-definitions" id="markdown-toc-activity-definitions">Activity Definitions</a></li>
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#artifact-index" id="markdown-toc-artifact-index">Artifact Index</a></li>
+</ul>
+
+</div>
+<p>This Implementation Guide defines FHIR resources for microplanning immunization campaigns. It provides the population and location-centric planning layer that complements individual-focused immunization IGs.</p>
+
+<div class="stu-note">
+<p>This implementation guide is under active development and is not yet ready for implementation.</p>
+</div>
+
+<h3 id="scope">Scope</h3>
+
+<p>The initial focus is on <strong>Polio Supplementary Immunization Activities (SIA)</strong> — mass campaigns targeting children 0–59 months in defined geographic areas. The design supports extension to other campaign types.</p>
+
+<h3 id="resource-flow">Resource Flow</h3>
+
+<p>The IG models campaign planning as a three-step process:</p>
+
+<ol>
+  <li><strong>Define</strong> — A <a href="StructureDefinition-microplan-plandefinition.html">PlanDefinition</a> describes the campaign template: what activities to perform and at which level of the location hierarchy.</li>
+  <li><strong>Instantiate</strong> — A <a href="StructureDefinition-microplan-careplan.html">CarePlan</a> operationalizes the campaign for a specific geographic area and time period.</li>
+  <li><strong>Execute</strong> — <a href="StructureDefinition-microplan-task.html">Tasks</a> are generated for each activity at each target location, assigned to teams, and tracked through completion.</li>
+</ol>
+
+<p>Supporting resources:</p>
+<ul>
+  <li><a href="StructureDefinition-microplan-location.html">Locations</a> form a hierarchy from country down to vaccination site.</li>
+  <li><a href="StructureDefinition-microplan-target-population.html">Groups</a> represent estimated target populations at each location.</li>
+</ul>
+
+<h3 id="campaign-activities">Campaign Activities</h3>
+
+<p>The Polio SIA campaign template defines three activities:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity</th>
+      <th>Target Level</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vaccination Session</td>
+      <td>Vaccination Site</td>
+      <td>Administer bOPV to children 0–59 months</td>
+    </tr>
+    <tr>
+      <td>Supervision Visit</td>
+      <td>District</td>
+      <td>Monitor and support campaign execution</td>
+    </tr>
+    <tr>
+      <td>Rapid Coverage Monitoring</td>
+      <td>Health Facility</td>
+      <td>Post-campaign coverage assessment</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="how-to-use-this-guide">How to Use This Guide</h3>
+
+<ul>
+  <li><strong>Campaign planners</strong>: Use the PlanDefinition as a template. Create a CarePlan for your target area and generate Tasks for each site.</li>
+  <li><strong>System implementers</strong>: Use the profiles to validate campaign planning data. Implement the $apply operation to automate Task generation from PlanDefinitions.</li>
+  <li><strong>Country adapters</strong>: Customize the location hierarchy, activity definitions, and target population criteria for your context.</li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<p>This IG depends on:</p>
+<ul>
+  <li><a href="http://hl7.org/fhir/uv/cpg/">HL7 Clinical Practice Guidelines (CPG)</a></li>
+</ul>
+
+<h3 id="profiles">Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Based On</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-microplan-plandefinition.html">Microplan PlanDefinition</a></td>
+      <td>PlanDefinition</td>
+      <td>Campaign template with level-targeted actions</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-microplan-careplan.html">Microplan CarePlan</a></td>
+      <td>CarePlan</td>
+      <td>Instantiated campaign for a geographic area</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-microplan-task.html">Microplan Task</a></td>
+      <td>Task</td>
+      <td>Concrete activity at a specific location and time</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-microplan-location.html">Microplan Location</a></td>
+      <td>Location</td>
+      <td>Location in the campaign hierarchy</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-microplan-target-population.html">Microplan Target Population</a></td>
+      <td>Group</td>
+      <td>Estimated target population at a location</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="extensions">Extensions</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension</th>
+      <th>Context</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-TargetLocationType.html">Target Location Type</a></td>
+      <td>PlanDefinition.action</td>
+      <td>Which hierarchy level an action generates Tasks at</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-CampaignLocation.html">Campaign Location</a></td>
+      <td>CarePlan, Group</td>
+      <td>Links a resource to a campaign Location</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="activity-definitions">Activity Definitions</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ActivityDefinition-PolioVaccinationSession.html">Polio Vaccination Session</a></td>
+      <td>Administer bOPV at vaccination sites</td>
+    </tr>
+    <tr>
+      <td><a href="ActivityDefinition-SupervisionVisit.html">Supervision Visit</a></td>
+      <td>Monitor campaign execution at district level</td>
+    </tr>
+    <tr>
+      <td><a href="ActivityDefinition-CoverageMonitoring.html">Rapid Coverage Monitoring</a></td>
+      <td>Post-campaign coverage assessment</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="terminology">Terminology</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-MicroplanLocationTypeCS.html">Location Type CodeSystem</a></td>
+      <td>Campaign location hierarchy levels</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-MicroplanActivityTypeCS.html">Activity Type CodeSystem</a></td>
+      <td>Types of campaign activities</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-MicroplanParticipantRoleCS.html">Participant Role CodeSystem</a></td>
+      <td>Roles of campaign participants</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="examples">Examples</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="PlanDefinition-PolioSIACampaign.html">Polio SIA Campaign</a></td>
+      <td>Campaign template for Polio SIA</td>
+    </tr>
+    <tr>
+      <td><a href="CarePlan-ExampleCarePlan.html">Polio SIA — Riverside District</a></td>
+      <td>Instantiated campaign</td>
+    </tr>
+    <tr>
+      <td><a href="Task-ExampleTaskVaccinationAlpha.html">Vaccination — Site Alpha</a></td>
+      <td>Vaccination task at a site</td>
+    </tr>
+    <tr>
+      <td><a href="Task-ExampleTaskVaccinationBeta.html">Vaccination — Site Beta</a></td>
+      <td>Vaccination task at a site</td>
+    </tr>
+    <tr>
+      <td><a href="Task-ExampleTaskSupervision.html">Supervision — Riverside District</a></td>
+      <td>Supervision task</td>
+    </tr>
+    <tr>
+      <td><a href="Task-ExampleTaskCoverageMonitoring.html">Coverage Monitoring — Riverside HC</a></td>
+      <td>Coverage monitoring task</td>
+    </tr>
+    <tr>
+      <td><a href="Location-ExampleCountry.html">Location Hierarchy</a></td>
+      <td>Country → Province → District → Facility → Sites</td>
+    </tr>
+    <tr>
+      <td><a href="Group-ExamplePopulationSiteAlpha.html">Target Population — Site Alpha</a></td>
+      <td>Estimated 500 children</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="artifact-index">Artifact Index</h3>
+
+<p>For a complete listing of artifacts defined in this guide, see the <a href="artifacts.html">Artifact Index</a>.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.microplan#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:36-0400">2026-03-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

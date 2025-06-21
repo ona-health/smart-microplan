@@ -1,0 +1,14 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "PolioVaccinationSession",
+  "url": "http://smart.who.int/microplan/ActivityDefinition/PolioVaccinationSession",
+  "title": "Polio Vaccination Session",
+  "description": "Administer bivalent oral polio vaccine (bOPV) to all children 0–59 months at a vaccination site.",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-06-21",
+  "publisher": "World Health Organization (WHO)",
+  "kind": "Task",
+  "intent": "plan",
+  "doNotPerform": false
+}

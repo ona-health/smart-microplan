@@ -1,0 +1,117 @@
+{% raw %}<pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:PlanDefinition ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PolioSIACampaign&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n&lt;div&gt;\n    &lt;table class=\&quot;grid dict\&quot;&gt;\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Id: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;PolioSIACampaign&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Url: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;&lt;a href=\&quot;PlanDefinition-PolioSIACampaign.html\&quot;&gt;Polio SIA Campaign&lt;/a&gt;&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Version: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;0.1.0&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Title: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;Polio SIA Campaign&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Status: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;draft&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Type: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                \n                    \n                        \n                        &lt;p style=\&quot;margin-bottom: 5px;\&quot;&gt;\n                            &lt;b&gt;system: &lt;/b&gt; &lt;span&gt;&lt;a href=\&quot;http://terminology.hl7.org/7.1.0/CodeSystem-plan-definition-type.html\&quot;&gt;http://terminology.hl7.org/CodeSystem/plan-definition-type&lt;/a&gt;&lt;/span&gt;\n                        &lt;/p&gt;\n                        \n                        \n                        &lt;p style=\&quot;margin-bottom: 5px;\&quot;&gt;\n                            &lt;b&gt;code: &lt;/b&gt; &lt;span&gt;clinical-protocol&lt;/span&gt;\n                        &lt;/p&gt;\n                        \n                        \n                    \n                \n                \n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;2025-06-21&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Publisher: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;WHO&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Description: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;&lt;div&gt;&lt;p&gt;Supplementary Immunization Activity for oral polio vaccine (bOPV) targeting children aged 0–59 months.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Actions: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                &lt;table class=\&quot;grid-dict\&quot;&gt;\n                    \n                    &lt;tr&gt;\n                        &lt;td&gt;\n                            \n                            &lt;b&gt; Vaccination Session:&lt;/b&gt; Conduct bOPV vaccination session at vaccination site for all children 0–59 months.\n                            \n                            &lt;br/&gt;\n                            \n                            \n                            \n                            \n                            &lt;b&gt;Then:&lt;/b&gt; &lt;i&gt;Definition:&lt;/i&gt; &lt;a href=\&quot;ActivityDefinition-PolioVaccinationSession.html\&quot;&gt;Polio Vaccination Session&lt;/a&gt;&lt;br/&gt;\n                            \n                            \n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                    \n                    &lt;tr&gt;\n                        &lt;td&gt;\n                            \n                            &lt;b&gt; Supervision Visit:&lt;/b&gt; Supervisor visits vaccination sites to monitor campaign execution and provide support.\n                            \n                            &lt;br/&gt;\n                            \n                            \n                            \n                            \n                            &lt;b&gt;Then:&lt;/b&gt; &lt;i&gt;Definition:&lt;/i&gt; &lt;a href=\&quot;ActivityDefinition-SupervisionVisit.html\&quot;&gt;Supervision Visit&lt;/a&gt;&lt;br/&gt;\n                            \n                            \n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                    \n                    &lt;tr&gt;\n                        &lt;td&gt;\n                            \n                            &lt;b&gt; Rapid Coverage Monitoring:&lt;/b&gt; Post-campaign rapid assessment of vaccination coverage at health facility catchment areas.\n                            \n                            &lt;br/&gt;\n                            \n                            \n                            \n                            \n                            &lt;b&gt;Then:&lt;/b&gt; &lt;i&gt;Definition:&lt;/i&gt; &lt;a href=\&quot;ActivityDefinition-CoverageMonitoring.html\&quot;&gt;Rapid Coverage Monitoring&lt;/a&gt;&lt;br/&gt;\n                            \n                            \n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                    \n                &lt;/table&gt;\n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n    &lt;/table&gt;\n&lt;/div&gt;\n&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/PlanDefinition/PolioSIACampaign&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Polio SIA Campaign&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.type">fhir:type</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;clinical-protocol&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-06-21&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Supplementary Immunization Activity for oral polio vaccine (bOPV) targeting children aged 0–59 months.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.goal">fhir:goal</a> ( [
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.goal.description">fhir:description</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Achieve at least 95% OPV coverage in children 0–59 months in the target area.&quot; ]     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">fhir:action</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/StructureDefinition/TargetLocationType&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;vaccination-site&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vaccination Site&quot; ]         ] )       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vaccination Session&quot; ] ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Conduct bOPV vaccination session at vaccination site for all children 0–59 months.&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant">fhir:participant</a> [
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;practitioner&quot; ] ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.role">fhir:role</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;vaccination-team&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vaccination Team&quot; ]         ] )       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">fhir:definition</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">a</a> fhir:canonical ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/microplan/ActivityDefinition/PolioVaccinationSession&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/microplan/ActivityDefinition/PolioVaccinationSession&gt;     ]
+  ] [
+    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/StructureDefinition/TargetLocationType&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;district&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;District&quot; ]         ] )       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Supervision Visit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Supervisor visits vaccination sites to monitor campaign execution and provide support.&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant">fhir:participant</a> [
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;practitioner&quot; ] ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.role">fhir:role</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;supervisor&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Supervisor&quot; ]         ] )       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">fhir:definition</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">a</a> fhir:canonical ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/microplan/ActivityDefinition/SupervisionVisit&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/microplan/ActivityDefinition/SupervisionVisit&gt;     ]
+  ] [
+    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/StructureDefinition/TargetLocationType&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;health-facility&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Health Facility&quot; ]         ] )       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rapid Coverage Monitoring&quot; ] ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Post-campaign rapid assessment of vaccination coverage at health facility catchment areas.&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.relatedAction">fhir:relatedAction</a> [
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.relatedAction.actionId">fhir:actionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;vaccination-session&quot; ] ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.relatedAction.relationship">fhir:relationship</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;after&quot; ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant">fhir:participant</a> [
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;practitioner&quot; ] ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.role">fhir:role</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;monitoring-team&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Monitoring Team&quot; ]         ] )       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">fhir:definition</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">a</a> fhir:canonical ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/microplan/ActivityDefinition/CoverageMonitoring&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/microplan/ActivityDefinition/CoverageMonitoring&gt;     ]
+  ] ) . # 
+
+</code></pre>
+
+{% endraw %}

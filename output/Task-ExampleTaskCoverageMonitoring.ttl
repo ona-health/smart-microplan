@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/microplan/Task/ExampleTaskCoverageMonitoring> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleTaskCoverageMonitoring"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/microplan/StructureDefinition/microplan-task"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/microplan/StructureDefinition/microplan-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task ExampleTaskCoverageMonitoring</b></p><a name=\"ExampleTaskCoverageMonitoring\"> </a><a name=\"hcExampleTaskCoverageMonitoring\"> </a><a name=\"ExampleTaskCoverageMonitoring-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-microplan-task.html\">Microplan Task</a></p></div><p><b>basedOn</b>: <a href=\"CarePlan-ExampleCarePlan.html\">CarePlan Polio SIA — Riverside District, June 2025</a></p><p><b>status</b>: Requested</p><p><b>intent</b>: plan</p><p><b>focus</b>: <a href=\"ActivityDefinition-CoverageMonitoring.html\">Rapid Coverage Monitoring</a></p><p><b>for</b>: <a href=\"Group-ExamplePopulationDistrict.html\">Group: extension = -&gt;Location Riverside District; type = person; actual = false; quantity = 1250</a></p><p><b>executionPeriod</b>: 2025-06-25 --&gt; 2025-06-25</p><p><b>location</b>: <a href=\"Location-ExampleFacility.html\">Location Riverside Health Center</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://smart.who.int/microplan/CarePlan/ExampleCarePlan> ;
+     fhir:reference [ fhir:v "CarePlan/ExampleCarePlan" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:focus [
+     fhir:link <http://smart.who.int/microplan/ActivityDefinition/CoverageMonitoring> ;
+     fhir:reference [ fhir:v "ActivityDefinition/CoverageMonitoring" ]
+  ] ; # 
+  fhir:for [
+     fhir:link <http://smart.who.int/microplan/Group/ExamplePopulationDistrict> ;
+     fhir:reference [ fhir:v "Group/ExamplePopulationDistrict" ]
+  ] ; # 
+  fhir:executionPeriod [
+     fhir:start [ fhir:v "2025-06-25"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-06-25"^^xsd:date ]
+  ] ; # 
+  fhir:location [
+     fhir:link <http://smart.who.int/microplan/Location/ExampleFacility> ;
+     fhir:reference [ fhir:v "Location/ExampleFacility" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

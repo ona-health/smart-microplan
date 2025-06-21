@@ -1,0 +1,192 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "28e121e9-c506-4095-bb5a-54bf6e8afa66",
+  "meta" : {
+    "lastUpdated" : "2026-03-16T13:36:37.408-04:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-MicroplanActivityTypeCS.html\">codesystem Microplan Activity Type CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS-vaccination-session\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanActivityTypeCS.html#MicroplanActivityTypeCS-vaccination-session\">vaccination-session</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</td><td>Vaccination Session</td><td>Administration of vaccines to the target population at a vaccination site</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS-supervision-visit\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanActivityTypeCS.html#MicroplanActivityTypeCS-supervision-visit\">supervision-visit</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</td><td>Supervision Visit</td><td>Supervisory monitoring visit during campaign execution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS-coverage-monitoring\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanActivityTypeCS.html#MicroplanActivityTypeCS-coverage-monitoring\">coverage-monitoring</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</td><td>Rapid Coverage Monitoring</td><td>Post-campaign assessment of vaccination coverage</td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS",
+      "version" : "0.1.0",
+      "name" : "MicroplanActivityTypeVS",
+      "title" : "Microplan Activity Type ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-16T13:36:19-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:7ec88896-a686-4f15-a7de-caf50aca6e24",
+        "timestamp" : "2026-03-16T13:36:49-04:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS",
+          "code" : "vaccination-session",
+          "display" : "Vaccination Session"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS",
+          "code" : "supervision-visit",
+          "display" : "Supervision Visit"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS",
+          "code" : "coverage-monitoring",
+          "display" : "Rapid Coverage Monitoring"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-MicroplanLocationTypeCS.html\">codesystem Microplan Location Type CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-country\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-country\">country</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td><td>Country</td><td>National level</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-province\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-province\">province</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td><td>Province</td><td>Province or region level</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-district\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-district\">district</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td><td>District</td><td>District level</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-health-facility\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-health-facility\">health-facility</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td><td>Health Facility</td><td>Health facility or health center</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-vaccination-site\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-vaccination-site\">vaccination-site</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td><td>Vaccination Site</td><td>Point of vaccination delivery (fixed post, transit point, house-to-house team area)</td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS",
+      "version" : "0.1.0",
+      "name" : "MicroplanLocationTypeVS",
+      "title" : "Microplan Location Type ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-16T13:36:19-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:2812c44c-ca18-4267-bf46-cebff31639de",
+        "timestamp" : "2026-03-16T13:36:49-04:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "code" : "country",
+          "display" : "Country"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "code" : "province",
+          "display" : "Province"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "code" : "district",
+          "display" : "District"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "code" : "health-facility",
+          "display" : "Health Facility"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "code" : "vaccination-site",
+          "display" : "Vaccination Site"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-MicroplanParticipantRoleCS.html\">codesystem Microplan Participant Role CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS-vaccination-team\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanParticipantRoleCS.html#MicroplanParticipantRoleCS-vaccination-team\">vaccination-team</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</td><td>Vaccination Team</td><td>Team responsible for administering vaccines at a vaccination site</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS-supervisor\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanParticipantRoleCS.html#MicroplanParticipantRoleCS-supervisor\">supervisor</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</td><td>Supervisor</td><td>Person responsible for monitoring and supporting campaign execution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS-monitoring-team\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MicroplanParticipantRoleCS.html#MicroplanParticipantRoleCS-monitoring-team\">monitoring-team</a></td><td>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</td><td>Monitoring Team</td><td>Team responsible for post-campaign rapid coverage assessment</td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS",
+      "version" : "0.1.0",
+      "name" : "MicroplanParticipantRoleVS",
+      "title" : "Microplan Participant Role ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-16T13:36:19-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:70cfeee6-691d-4e28-8bec-a2410af830d0",
+        "timestamp" : "2026-03-16T13:36:49-04:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+          "code" : "vaccination-team",
+          "display" : "Vaccination Team"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+          "code" : "supervisor",
+          "display" : "Supervisor"
+        },
+        {
+          "system" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+          "code" : "monitoring-team",
+          "display" : "Monitoring Team"
+        }]
+      }
+    }
+  }]
+}

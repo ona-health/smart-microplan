@@ -1,0 +1,52 @@
+{
+  "resourceType": "CarePlan",
+  "id": "ExampleCarePlan",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-careplan"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://smart.who.int/microplan/StructureDefinition/CampaignLocation",
+      "valueReference": {
+        "reference": "Location/ExampleDistrict"
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "title": "Polio SIA — Riverside District, June 2025",
+  "period": {
+    "start": "2025-06-21",
+    "end": "2025-06-25"
+  },
+  "instantiatesCanonical": [
+    "http://smart.who.int/microplan/PlanDefinition/PolioSIACampaign"
+  ],
+  "subject": {
+    "reference": "Group/ExamplePopulationDistrict"
+  },
+  "activity": [
+    {
+      "reference": {
+        "reference": "Task/ExampleTaskVaccinationAlpha"
+      }
+    },
+    {
+      "reference": {
+        "reference": "Task/ExampleTaskVaccinationBeta"
+      }
+    },
+    {
+      "reference": {
+        "reference": "Task/ExampleTaskSupervision"
+      }
+    },
+    {
+      "reference": {
+        "reference": "Task/ExampleTaskCoverageMonitoring"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/microplan/Group/ExamplePopulationSiteBeta> a fhir:Group ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExamplePopulationSiteBeta"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/microplan/StructureDefinition/microplan-target-population"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/microplan/StructureDefinition/microplan-target-population>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group ExamplePopulationSiteBeta</b></p><a name=\"ExamplePopulationSiteBeta\"> </a><a name=\"hcExamplePopulationSiteBeta\"> </a><a name=\"ExamplePopulationSiteBeta-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-microplan-target-population.html\">Microplan Target Population</a></p></div><p><b>Campaign Location</b>: <a href=\"Location-ExampleSiteBeta.html\">Location Site Beta — Riverside Ward 3</a></p><p><b>type</b>: Person</p><p><b>actual</b>: false</p><p><b>quantity</b>: 750</p><h3>Characteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td><td><b>Exclude</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/usage-context-type age}\">Age Range</span></td><td>0-59 months</td><td>false</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://smart.who.int/microplan/StructureDefinition/CampaignLocation"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://smart.who.int/microplan/Location/ExampleSiteBeta> ;
+       fhir:reference [ fhir:v "Location/ExampleSiteBeta" ]
+     ]
+  ] ) ; # 
+  fhir:type [ fhir:v "person"] ; # 
+  fhir:actual [ fhir:v false] ; # 
+  fhir:quantity [ fhir:v "750"^^xsd:nonNegativeInteger] ; # 
+  fhir:characteristic ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "age" ] ;
+         fhir:display [ fhir:v "Age Range" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Range ;
+       fhir:low [
+         fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "months" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mo" ]
+       ] ;
+       fhir:high [
+         fhir:value [ fhir:v "59"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "months" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mo" ]
+       ]
+     ] ;
+     fhir:exclude [ fhir:v false ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

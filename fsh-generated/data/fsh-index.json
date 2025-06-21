@@ -1,0 +1,250 @@
+[
+  {
+    "outputFile": "ActivityDefinition-CoverageMonitoring.json",
+    "fshName": "CoverageMonitoring",
+    "fshType": "Instance",
+    "fshFile": "activitydefinitions/CoverageMonitoring.fsh",
+    "startLine": 4,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ActivityDefinition-PolioVaccinationSession.json",
+    "fshName": "PolioVaccinationSession",
+    "fshType": "Instance",
+    "fshFile": "activitydefinitions/PolioVaccinationSession.fsh",
+    "startLine": 4,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ActivityDefinition-SupervisionVisit.json",
+    "fshName": "SupervisionVisit",
+    "fshType": "Instance",
+    "fshFile": "activitydefinitions/SupervisionVisit.fsh",
+    "startLine": 4,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CarePlan-ExampleCarePlan.json",
+    "fshName": "ExampleCarePlan",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleCarePlan.fsh",
+    "startLine": 4,
+    "endLine": 23
+  },
+  {
+    "outputFile": "CodeSystem-MicroplanActivityTypeCS.json",
+    "fshName": "MicroplanActivityTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/MicroplanActivityTypeCS.fsh",
+    "startLine": 4,
+    "endLine": 14
+  },
+  {
+    "outputFile": "CodeSystem-MicroplanLocationTypeCS.json",
+    "fshName": "MicroplanLocationTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/MicroplanLocationTypeCS.fsh",
+    "startLine": 4,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CodeSystem-MicroplanParticipantRoleCS.json",
+    "fshName": "MicroplanParticipantRoleCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/MicroplanParticipantRoleCS.fsh",
+    "startLine": 4,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Group-ExamplePopulationDistrict.json",
+    "fshName": "ExamplePopulationDistrict",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleGroups.fsh",
+    "startLine": 38,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Group-ExamplePopulationSiteAlpha.json",
+    "fshName": "ExamplePopulationSiteAlpha",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleGroups.fsh",
+    "startLine": 4,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Group-ExamplePopulationSiteBeta.json",
+    "fshName": "ExamplePopulationSiteBeta",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleGroups.fsh",
+    "startLine": 21,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Location-ExampleCountry.json",
+    "fshName": "ExampleCountry",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleLocations.fsh",
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Location-ExampleDistrict.json",
+    "fshName": "ExampleDistrict",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleLocations.fsh",
+    "startLine": 25,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Location-ExampleFacility.json",
+    "fshName": "ExampleFacility",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleLocations.fsh",
+    "startLine": 36,
+    "endLine": 45
+  },
+  {
+    "outputFile": "Location-ExampleProvince.json",
+    "fshName": "ExampleProvince",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleLocations.fsh",
+    "startLine": 14,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Location-ExampleSiteAlpha.json",
+    "fshName": "ExampleSiteAlpha",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleLocations.fsh",
+    "startLine": 47,
+    "endLine": 59
+  },
+  {
+    "outputFile": "Location-ExampleSiteBeta.json",
+    "fshName": "ExampleSiteBeta",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleLocations.fsh",
+    "startLine": 61,
+    "endLine": 73
+  },
+  {
+    "outputFile": "PlanDefinition-PolioSIACampaign.json",
+    "fshName": "PolioSIACampaign",
+    "fshType": "Instance",
+    "fshFile": "plandefinitions/PolioSIACampaign.fsh",
+    "startLine": 4,
+    "endLine": 48
+  },
+  {
+    "outputFile": "StructureDefinition-CampaignLocation.json",
+    "fshName": "CampaignLocation",
+    "fshType": "Extension",
+    "fshFile": "extensions/CampaignLocation.fsh",
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-TargetLocationType.json",
+    "fshName": "TargetLocationType",
+    "fshType": "Extension",
+    "fshFile": "extensions/TargetLocationType.fsh",
+    "startLine": 4,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-microplan-careplan.json",
+    "fshName": "MicroplanCarePlan",
+    "fshType": "Profile",
+    "fshFile": "profiles/MicroplanCarePlan.fsh",
+    "startLine": 4,
+    "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-microplan-location.json",
+    "fshName": "MicroplanLocation",
+    "fshType": "Profile",
+    "fshFile": "profiles/MicroplanLocation.fsh",
+    "startLine": 4,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-microplan-plandefinition.json",
+    "fshName": "MicroplanPlanDefinition",
+    "fshType": "Profile",
+    "fshFile": "profiles/MicroplanPlanDefinition.fsh",
+    "startLine": 4,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-microplan-target-population.json",
+    "fshName": "MicroplanTargetPopulation",
+    "fshType": "Profile",
+    "fshFile": "profiles/MicroplanTargetPopulation.fsh",
+    "startLine": 4,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-microplan-task.json",
+    "fshName": "MicroplanTask",
+    "fshType": "Profile",
+    "fshFile": "profiles/MicroplanTask.fsh",
+    "startLine": 4,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Task-ExampleTaskCoverageMonitoring.json",
+    "fshName": "ExampleTaskCoverageMonitoring",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleTasks.fsh",
+    "startLine": 64,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Task-ExampleTaskSupervision.json",
+    "fshName": "ExampleTaskSupervision",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleTasks.fsh",
+    "startLine": 48,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Task-ExampleTaskVaccinationAlpha.json",
+    "fshName": "ExampleTaskVaccinationAlpha",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleTasks.fsh",
+    "startLine": 4,
+    "endLine": 24
+  },
+  {
+    "outputFile": "Task-ExampleTaskVaccinationBeta.json",
+    "fshName": "ExampleTaskVaccinationBeta",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleTasks.fsh",
+    "startLine": 26,
+    "endLine": 46
+  },
+  {
+    "outputFile": "ValueSet-MicroplanActivityTypeVS.json",
+    "fshName": "MicroplanActivityTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MicroplanActivityTypeVS.fsh",
+    "startLine": 4,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-MicroplanLocationTypeVS.json",
+    "fshName": "MicroplanLocationTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MicroplanLocationTypeVS.fsh",
+    "startLine": 4,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-MicroplanParticipantRoleVS.json",
+    "fshName": "MicroplanParticipantRoleVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MicroplanParticipantRoleVS.fsh",
+    "startLine": 4,
+    "endLine": 11
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "resourceType": "Group",
+  "id": "ExamplePopulationDistrict",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-target-population"
+    ]
+  },
+  "type": "person",
+  "actual": false,
+  "extension": [
+    {
+      "url": "http://smart.who.int/microplan/StructureDefinition/CampaignLocation",
+      "valueReference": {
+        "reference": "Location/ExampleDistrict"
+      }
+    }
+  ],
+  "quantity": 1250,
+  "characteristic": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "age",
+            "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+            "display": "Age Range"
+          }
+        ]
+      },
+      "valueRange": {
+        "low": {
+          "value": 0,
+          "code": "mo",
+          "system": "http://unitsofmeasure.org",
+          "unit": "months"
+        },
+        "high": {
+          "value": 59,
+          "code": "mo",
+          "system": "http://unitsofmeasure.org",
+          "unit": "months"
+        }
+      },
+      "exclude": false
+    }
+  ]
+}

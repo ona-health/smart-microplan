@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MicroplanActivityTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MicroplanActivityTypeCS</b></p><a name="MicroplanActivityTypeCS"> </a><a name="hcMicroplanActivityTypeCS"> </a><a name="MicroplanActivityTypeCS-en-US"> </a><p>This case-sensitive code system <code>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">vaccination-session<a name="MicroplanActivityTypeCS-vaccination-session"> </a></td><td>Vaccination Session</td><td>Administration of vaccines to the target population at a vaccination site</td></tr><tr><td style="white-space:nowrap">supervision-visit<a name="MicroplanActivityTypeCS-supervision-visit"> </a></td><td>Supervision Visit</td><td>Supervisory monitoring visit during campaign execution</td></tr><tr><td style="white-space:nowrap">coverage-monitoring<a name="MicroplanActivityTypeCS-coverage-monitoring"> </a></td><td>Rapid Coverage Monitoring</td><td>Post-campaign assessment of vaccination coverage</td></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"/>
+  <version value="0.1.0"/>
+  <name value="MicroplanActivityTypeCS"/>
+  <title value="Microplan Activity Type CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-03-16T13:36:19-04:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Types of activities performed during an immunization campaign."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="vaccination-session"/>
+    <display value="Vaccination Session"/>
+    <definition value="Administration of vaccines to the target population at a vaccination site"/>
+  </concept>
+  <concept>
+    <code value="supervision-visit"/>
+    <display value="Supervision Visit"/>
+    <definition value="Supervisory monitoring visit during campaign execution"/>
+  </concept>
+  <concept>
+    <code value="coverage-monitoring"/>
+    <display value="Rapid Coverage Monitoring"/>
+    <definition value="Post-campaign assessment of vaccination coverage"/>
+  </concept>
+</CodeSystem>

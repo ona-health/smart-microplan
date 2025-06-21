@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS,0.1.0,draft,,MicroplanActivityTypeCS,Microplan Activity Type CodeSystem,"Types of activities performed during an immunization campaign.","ValueSet/MicroplanActivityTypeVS"
+http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS,0.1.0,draft,,MicroplanLocationTypeCS,Microplan Location Type CodeSystem,"Administrative levels in the immunization campaign location hierarchy.","ValueSet/MicroplanLocationTypeVS"
+http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS,0.1.0,draft,,MicroplanParticipantRoleCS,Microplan Participant Role CodeSystem,"Roles of participants in immunization campaign activities.","ValueSet/MicroplanParticipantRoleVS"

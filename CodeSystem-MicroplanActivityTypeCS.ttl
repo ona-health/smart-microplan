@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MicroplanActivityTypeCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MicroplanActivityTypeCS</b></p><a name=\"MicroplanActivityTypeCS\"> </a><a name=\"hcMicroplanActivityTypeCS\"> </a><a name=\"MicroplanActivityTypeCS-en-US\"> </a><p>This case-sensitive code system <code>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vaccination-session<a name=\"MicroplanActivityTypeCS-vaccination-session\"> </a></td><td>Vaccination Session</td><td>Administration of vaccines to the target population at a vaccination site</td></tr><tr><td style=\"white-space:nowrap\">supervision-visit<a name=\"MicroplanActivityTypeCS-supervision-visit\"> </a></td><td>Supervision Visit</td><td>Supervisory monitoring visit during campaign execution</td></tr><tr><td style=\"white-space:nowrap\">coverage-monitoring<a name=\"MicroplanActivityTypeCS-coverage-monitoring\"> </a></td><td>Rapid Coverage Monitoring</td><td>Post-campaign assessment of vaccination coverage</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MicroplanActivityTypeCS"] ; # 
+  fhir:title [ fhir:v "Microplan Activity Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-03-16T13:36:19-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of activities performed during an immunization campaign."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "vaccination-session" ] ;
+     fhir:display [ fhir:v "Vaccination Session" ] ;
+     fhir:definition [ fhir:v "Administration of vaccines to the target population at a vaccination site" ]
+  ] [
+     fhir:code [ fhir:v "supervision-visit" ] ;
+     fhir:display [ fhir:v "Supervision Visit" ] ;
+     fhir:definition [ fhir:v "Supervisory monitoring visit during campaign execution" ]
+  ] [
+     fhir:code [ fhir:v "coverage-monitoring" ] ;
+     fhir:display [ fhir:v "Rapid Coverage Monitoring" ] ;
+     fhir:definition [ fhir:v "Post-campaign assessment of vaccination coverage" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

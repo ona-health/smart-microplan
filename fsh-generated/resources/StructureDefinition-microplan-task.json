@@ -1,0 +1,107 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "microplan-task",
+  "url": "http://smart.who.int/microplan/StructureDefinition/microplan-task",
+  "name": "MicroplanTask",
+  "title": "Microplan Task",
+  "status": "draft",
+  "experimental": false,
+  "description": "A concrete campaign activity assigned to a team at a specific location and time.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.basedOn",
+        "path": "Task.basedOn",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://smart.who.int/microplan/StructureDefinition/microplan-careplan"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Task.status",
+        "path": "Task.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.intent",
+        "path": "Task.intent",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.focus",
+        "path": "Task.focus",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Task.for",
+        "path": "Task.for",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://smart.who.int/microplan/StructureDefinition/microplan-target-population"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Task.executionPeriod",
+        "path": "Task.executionPeriod",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Task.owner",
+        "path": "Task.owner",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.location",
+        "path": "Task.location",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input",
+        "path": "Task.input",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.output",
+        "path": "Task.output",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "Location",
+  "id": "ExampleProvince",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+    ]
+  },
+  "name": "Eastern Province",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "province",
+          "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "display": "Province"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "partOf": {
+    "reference": "Location/ExampleCountry"
+  }
+}

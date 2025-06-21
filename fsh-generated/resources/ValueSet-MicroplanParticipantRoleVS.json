@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MicroplanParticipantRoleVS",
+  "id": "MicroplanParticipantRoleVS",
+  "title": "Microplan Participant Role ValueSet",
+  "description": "Roles of participants in immunization campaign activities.",
+  "url": "http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "MicroplanActivityTypeCS",
+  "id": "MicroplanActivityTypeCS",
+  "title": "Microplan Activity Type CodeSystem",
+  "description": "Types of activities performed during an immunization campaign.",
+  "url": "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS",
+  "concept": [
+    {
+      "code": "vaccination-session",
+      "display": "Vaccination Session",
+      "definition": "Administration of vaccines to the target population at a vaccination site"
+    },
+    {
+      "code": "supervision-visit",
+      "display": "Supervision Visit",
+      "definition": "Supervisory monitoring visit during campaign execution"
+    },
+    {
+      "code": "coverage-monitoring",
+      "display": "Rapid Coverage Monitoring",
+      "definition": "Post-campaign assessment of vaccination coverage"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 3
+}

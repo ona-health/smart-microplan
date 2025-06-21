@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="28e121e9-c506-4095-bb5a-54bf6e8afa66"/>
+  <meta>
+    <lastUpdated value="2026-03-16T13:36:37.408-04:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MicroplanActivityTypeCS.html">codesystem Microplan Activity Type CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS-vaccination-session"> </a>  
+                  <a href="CodeSystem-MicroplanActivityTypeCS.html#MicroplanActivityTypeCS-vaccination-session">vaccination-session</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</td>
+                <td>Vaccination Session</td>
+                <td>Administration of vaccines to the target population at a vaccination site</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS-supervision-visit"> </a>  
+                  <a href="CodeSystem-MicroplanActivityTypeCS.html#MicroplanActivityTypeCS-supervision-visit">supervision-visit</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</td>
+                <td>Supervision Visit</td>
+                <td>Supervisory monitoring visit during campaign execution</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS-coverage-monitoring"> </a>  
+                  <a href="CodeSystem-MicroplanActivityTypeCS.html#MicroplanActivityTypeCS-coverage-monitoring">coverage-monitoring</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS</td>
+                <td>Rapid Coverage Monitoring</td>
+                <td>Post-campaign assessment of vaccination coverage</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS"/>
+        <version value="0.1.0"/>
+        <name value="MicroplanActivityTypeVS"/>
+        <title value="Microplan Activity Type ValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-03-16T13:36:19-04:00"/>
+        <expansion>
+          <identifier value="urn:uuid:7ec88896-a686-4f15-a7de-caf50aca6e24"/>
+          <timestamp value="2026-03-16T13:36:49-04:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"/>
+            <code value="vaccination-session"/>
+            <display value="Vaccination Session"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"/>
+            <code value="supervision-visit"/>
+            <display value="Supervision Visit"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS"/>
+            <code value="coverage-monitoring"/>
+            <display value="Rapid Coverage Monitoring"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MicroplanLocationTypeCS.html">codesystem Microplan Location Type CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-country"> </a>  
+                  <a href="CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-country">country</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td>
+                <td>Country</td>
+                <td>National level</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-province"> </a>  
+                  <a href="CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-province">province</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td>
+                <td>Province</td>
+                <td>Province or region level</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-district"> </a>  
+                  <a href="CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-district">district</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td>
+                <td>District</td>
+                <td>District level</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-health-facility"> </a>  
+                  <a href="CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-health-facility">health-facility</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td>
+                <td>Health Facility</td>
+                <td>Health facility or health center</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS-vaccination-site"> </a>  
+                  <a href="CodeSystem-MicroplanLocationTypeCS.html#MicroplanLocationTypeCS-vaccination-site">vaccination-site</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS</td>
+                <td>Vaccination Site</td>
+                <td>Point of vaccination delivery (fixed post, transit point, house-to-house team area)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS"/>
+        <version value="0.1.0"/>
+        <name value="MicroplanLocationTypeVS"/>
+        <title value="Microplan Location Type ValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-03-16T13:36:19-04:00"/>
+        <expansion>
+          <identifier value="urn:uuid:2812c44c-ca18-4267-bf46-cebff31639de"/>
+          <timestamp value="2026-03-16T13:36:49-04:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+            <code value="country"/>
+            <display value="Country"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+            <code value="province"/>
+            <display value="Province"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+            <code value="district"/>
+            <display value="District"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+            <code value="health-facility"/>
+            <display value="Health Facility"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+            <code value="vaccination-site"/>
+            <display value="Vaccination Site"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MicroplanParticipantRoleCS.html">codesystem Microplan Participant Role CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS-vaccination-team"> </a>  
+                  <a href="CodeSystem-MicroplanParticipantRoleCS.html#MicroplanParticipantRoleCS-vaccination-team">vaccination-team</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</td>
+                <td>Vaccination Team</td>
+                <td>Team responsible for administering vaccines at a vaccination site</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS-supervisor"> </a>  
+                  <a href="CodeSystem-MicroplanParticipantRoleCS.html#MicroplanParticipantRoleCS-supervisor">supervisor</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</td>
+                <td>Supervisor</td>
+                <td>Person responsible for monitoring and supporting campaign execution</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS-monitoring-team"> </a>  
+                  <a href="CodeSystem-MicroplanParticipantRoleCS.html#MicroplanParticipantRoleCS-monitoring-team">monitoring-team</a>
+                </td>
+                <td>http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS</td>
+                <td>Monitoring Team</td>
+                <td>Team responsible for post-campaign rapid coverage assessment</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS"/>
+        <version value="0.1.0"/>
+        <name value="MicroplanParticipantRoleVS"/>
+        <title value="Microplan Participant Role ValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-03-16T13:36:19-04:00"/>
+        <expansion>
+          <identifier value="urn:uuid:70cfeee6-691d-4e28-8bec-a2410af830d0"/>
+          <timestamp value="2026-03-16T13:36:49-04:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"/>
+            <code value="vaccination-team"/>
+            <display value="Vaccination Team"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"/>
+            <code value="supervisor"/>
+            <display value="Supervisor"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"/>
+            <code value="monitoring-team"/>
+            <display value="Monitoring Team"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

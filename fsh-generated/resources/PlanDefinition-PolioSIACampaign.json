@@ -1,0 +1,137 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "PolioSIACampaign",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition"
+    ]
+  },
+  "url": "http://smart.who.int/microplan/PlanDefinition/PolioSIACampaign",
+  "title": "Polio SIA Campaign",
+  "description": "Supplementary Immunization Activity for oral polio vaccine (bOPV) targeting children aged 0–59 months.",
+  "action": [
+    {
+      "extension": [
+        {
+          "url": "http://smart.who.int/microplan/StructureDefinition/TargetLocationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "vaccination-site",
+                "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+                "display": "Vaccination Site"
+              }
+            ]
+          }
+        }
+      ],
+      "title": "Vaccination Session",
+      "description": "Conduct bOPV vaccination session at vaccination site for all children 0–59 months.",
+      "definitionCanonical": "http://smart.who.int/microplan/ActivityDefinition/PolioVaccinationSession",
+      "participant": [
+        {
+          "type": "practitioner",
+          "role": {
+            "coding": [
+              {
+                "code": "vaccination-team",
+                "system": "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+                "display": "Vaccination Team"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://smart.who.int/microplan/StructureDefinition/TargetLocationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "district",
+                "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+                "display": "District"
+              }
+            ]
+          }
+        }
+      ],
+      "title": "Supervision Visit",
+      "description": "Supervisor visits vaccination sites to monitor campaign execution and provide support.",
+      "definitionCanonical": "http://smart.who.int/microplan/ActivityDefinition/SupervisionVisit",
+      "participant": [
+        {
+          "type": "practitioner",
+          "role": {
+            "coding": [
+              {
+                "code": "supervisor",
+                "system": "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+                "display": "Supervisor"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://smart.who.int/microplan/StructureDefinition/TargetLocationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "health-facility",
+                "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+                "display": "Health Facility"
+              }
+            ]
+          }
+        }
+      ],
+      "title": "Rapid Coverage Monitoring",
+      "description": "Post-campaign rapid assessment of vaccination coverage at health facility catchment areas.",
+      "definitionCanonical": "http://smart.who.int/microplan/ActivityDefinition/CoverageMonitoring",
+      "relatedAction": [
+        {
+          "actionId": "vaccination-session",
+          "relationship": "after"
+        }
+      ],
+      "participant": [
+        {
+          "type": "practitioner",
+          "role": {
+            "coding": [
+              {
+                "code": "monitoring-team",
+                "system": "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+                "display": "Monitoring Team"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "status": "draft",
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-protocol",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+      }
+    ]
+  },
+  "date": "2025-06-21",
+  "publisher": "World Health Organization (WHO)",
+  "goal": [
+    {
+      "description": {
+        "text": "Achieve at least 95% OPV coverage in children 0–59 months in the target area."
+      }
+    }
+  ]
+}

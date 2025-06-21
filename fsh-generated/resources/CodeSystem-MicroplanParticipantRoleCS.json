@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "MicroplanParticipantRoleCS",
+  "id": "MicroplanParticipantRoleCS",
+  "title": "Microplan Participant Role CodeSystem",
+  "description": "Roles of participants in immunization campaign activities.",
+  "url": "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+  "concept": [
+    {
+      "code": "vaccination-team",
+      "display": "Vaccination Team",
+      "definition": "Team responsible for administering vaccines at a vaccination site"
+    },
+    {
+      "code": "supervisor",
+      "display": "Supervisor",
+      "definition": "Person responsible for monitoring and supporting campaign execution"
+    },
+    {
+      "code": "monitoring-team",
+      "display": "Monitoring Team",
+      "definition": "Team responsible for post-campaign rapid coverage assessment"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 3
+}

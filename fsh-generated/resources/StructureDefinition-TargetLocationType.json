@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TargetLocationType",
+  "url": "http://smart.who.int/microplan/StructureDefinition/TargetLocationType",
+  "name": "TargetLocationType",
+  "title": "Target Location Type",
+  "status": "draft",
+  "experimental": false,
+  "description": "Specifies which level of the location hierarchy a PlanDefinition action targets for Task generation.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "PlanDefinition.action",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Target Location Type",
+        "definition": "Specifies which level of the location hierarchy a PlanDefinition action targets for Task generation."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://smart.who.int/microplan/StructureDefinition/TargetLocationType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "Location",
+  "id": "ExampleFacility",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+    ]
+  },
+  "name": "Riverside Health Center",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "health-facility",
+          "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "display": "Health Facility"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "partOf": {
+    "reference": "Location/ExampleDistrict"
+  }
+}

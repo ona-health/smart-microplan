@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/microplan/Location/ExampleSiteAlpha> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleSiteAlpha"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/microplan/StructureDefinition/microplan-location"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/microplan/StructureDefinition/microplan-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location ExampleSiteAlpha</b></p><a name=\"ExampleSiteAlpha\"> </a><a name=\"hcExampleSiteAlpha\"> </a><a name=\"ExampleSiteAlpha-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-microplan-location.html\">Microplan Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Site Alpha — Riverside Market</p><p><b>type</b>: <span title=\"Codes:{http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS vaccination-site}\">Vaccination Site</span></p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>36.8219</td><td>-1.2921</td></tr></table><p><b>partOf</b>: <a href=\"Location-ExampleFacility.html\">Location Riverside Health Center</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Site Alpha — Riverside Market"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vaccination-site" ] ;
+       fhir:display [ fhir:v "Vaccination Site" ]
+     ] )
+  ] ) ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v 36.8219 ] ;
+     fhir:latitude [ fhir:v -1.2921 ]
+  ] ; # 
+  fhir:partOf [
+     fhir:link <http://smart.who.int/microplan/Location/ExampleFacility> ;
+     fhir:reference [ fhir:v "Location/ExampleFacility" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

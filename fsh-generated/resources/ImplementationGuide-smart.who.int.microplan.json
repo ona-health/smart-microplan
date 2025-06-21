@@ -1,0 +1,314 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "smart.who.int.microplan",
+  "url": "http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan",
+  "version": "0.1.0",
+  "name": "Microplan",
+  "title": "WHO SMART Microplan Implementation Guide (DRAFT)",
+  "status": "draft",
+  "date": "2025-06-21",
+  "publisher": "WHO",
+  "contact": [
+    {
+      "name": "WHO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://who.int"
+        }
+      ]
+    }
+  ],
+  "description": "FHIR Implementation Guide for immunization campaign microplanning, supporting campaign definition, task generation, and execution tracking.",
+  "packageId": "smart.who.int.microplan",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.cpg",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg",
+      "id": "hl7_fhir_uv_cpg"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/CampaignLocation"
+        },
+        "name": "Campaign Location",
+        "description": "Links a resource to a location in the campaign hierarchy.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Task/ExampleTaskCoverageMonitoring"
+        },
+        "name": "Coverage Monitoring — Riverside Health Center",
+        "description": "Post-campaign rapid coverage monitoring at Riverside Health Center catchment.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-task"
+      },
+      {
+        "reference": {
+          "reference": "Location/ExampleProvince"
+        },
+        "name": "Eastern Province",
+        "description": "Example province-level location.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/ExampleCountry"
+        },
+        "name": "Example Country",
+        "description": "Example country-level location.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/MicroplanActivityTypeCS"
+        },
+        "name": "Microplan Activity Type CodeSystem",
+        "description": "Types of activities performed during an immunization campaign.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MicroplanActivityTypeVS"
+        },
+        "name": "Microplan Activity Type ValueSet",
+        "description": "Types of activities performed during an immunization campaign.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/microplan-careplan"
+        },
+        "name": "Microplan CarePlan",
+        "description": "An instantiated immunization campaign for a specific geographic area and time period.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/microplan-location"
+        },
+        "name": "Microplan Location",
+        "description": "A location in the immunization campaign hierarchy, from country down to vaccination site.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/MicroplanLocationTypeCS"
+        },
+        "name": "Microplan Location Type CodeSystem",
+        "description": "Administrative levels in the immunization campaign location hierarchy.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MicroplanLocationTypeVS"
+        },
+        "name": "Microplan Location Type ValueSet",
+        "description": "Administrative levels in the immunization campaign location hierarchy.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/MicroplanParticipantRoleCS"
+        },
+        "name": "Microplan Participant Role CodeSystem",
+        "description": "Roles of participants in immunization campaign activities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MicroplanParticipantRoleVS"
+        },
+        "name": "Microplan Participant Role ValueSet",
+        "description": "Roles of participants in immunization campaign activities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/microplan-plandefinition"
+        },
+        "name": "Microplan PlanDefinition",
+        "description": "A campaign template that defines activities and which location hierarchy levels they target.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/microplan-target-population"
+        },
+        "name": "Microplan Target Population",
+        "description": "Estimated target population for vaccination at a specific location.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/microplan-task"
+        },
+        "name": "Microplan Task",
+        "description": "A concrete campaign activity assigned to a team at a specific location and time.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/PolioSIACampaign"
+        },
+        "name": "Polio SIA Campaign",
+        "description": "Campaign template for a Polio Supplementary Immunization Activity targeting children 0–59 months.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/ExampleCarePlan"
+        },
+        "name": "Polio SIA — Riverside District, June 2025",
+        "description": "Instantiated Polio SIA campaign for Riverside District.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-careplan"
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/PolioVaccinationSession"
+        },
+        "name": "Polio Vaccination Session",
+        "description": "Administer bivalent oral polio vaccine (bOPV) to all children 0–59 months at a vaccination site.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/CoverageMonitoring"
+        },
+        "name": "Rapid Coverage Monitoring",
+        "description": "Post-campaign rapid coverage assessment at health facility catchment area level.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Location/ExampleDistrict"
+        },
+        "name": "Riverside District",
+        "description": "Example district-level location.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/ExampleFacility"
+        },
+        "name": "Riverside Health Center",
+        "description": "Example health facility.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/ExampleSiteAlpha"
+        },
+        "name": "Site Alpha — Fixed Post",
+        "description": "Example fixed-post vaccination site.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/ExampleSiteBeta"
+        },
+        "name": "Site Beta — House-to-House",
+        "description": "Example house-to-house vaccination site area.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/SupervisionVisit"
+        },
+        "name": "Supervision Visit",
+        "description": "Supervisory visit to monitor and support campaign execution at the district level.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Task/ExampleTaskSupervision"
+        },
+        "name": "Supervision Visit — Riverside District, Day 2",
+        "description": "Supervisor monitoring visit for Riverside District on campaign day 2.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-task"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TargetLocationType"
+        },
+        "name": "Target Location Type",
+        "description": "Specifies which level of the location hierarchy a PlanDefinition action targets for Task generation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Group/ExamplePopulationDistrict"
+        },
+        "name": "Target Population — Riverside District",
+        "description": "Aggregate estimated target population for the district campaign area.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-target-population"
+      },
+      {
+        "reference": {
+          "reference": "Group/ExamplePopulationSiteAlpha"
+        },
+        "name": "Target Population — Site Alpha",
+        "description": "Estimated target population of children 0–59 months at Site Alpha.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-target-population"
+      },
+      {
+        "reference": {
+          "reference": "Group/ExamplePopulationSiteBeta"
+        },
+        "name": "Target Population — Site Beta",
+        "description": "Estimated target population of children 0–59 months at Site Beta.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-target-population"
+      },
+      {
+        "reference": {
+          "reference": "Task/ExampleTaskVaccinationAlpha"
+        },
+        "name": "Vaccination Session — Site Alpha, Day 1",
+        "description": "OPV vaccination session at Site Alpha on campaign day 1.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-task"
+      },
+      {
+        "reference": {
+          "reference": "Task/ExampleTaskVaccinationBeta"
+        },
+        "name": "Vaccination Session — Site Beta, Day 1",
+        "description": "OPV vaccination session at Site Beta on campaign day 1.",
+        "exampleCanonical": "http://smart.who.int/microplan/StructureDefinition/microplan-task"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "produce-jekyll-data",
+        "value": "true"
+      }
+    ]
+  }
+}

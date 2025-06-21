@@ -1,0 +1,28 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanActivityTypeCS",
+      "title" : "Microplan Activity Type CodeSystem",
+      "description" : "Types of activities performed during an immunization campaign."
+    },
+    {
+      "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanLocationTypeCS",
+      "title" : "Microplan Location Type CodeSystem",
+      "description" : "Administrative levels in the immunization campaign location hierarchy."
+    },
+    {
+      "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MicroplanParticipantRoleCS",
+      "title" : "Microplan Participant Role CodeSystem",
+      "description" : "Roles of participants in immunization campaign activities."
+    }
+  ]
+}

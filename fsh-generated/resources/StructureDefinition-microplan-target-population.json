@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "microplan-target-population",
+  "url": "http://smart.who.int/microplan/StructureDefinition/microplan-target-population",
+  "name": "MicroplanTargetPopulation",
+  "title": "Microplan Target Population",
+  "status": "draft",
+  "experimental": false,
+  "description": "Estimated target population for vaccination at a specific location.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Group",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group.extension",
+        "path": "Group.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.extension:campaignLocation",
+        "path": "Group.extension",
+        "sliceName": "campaignLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://smart.who.int/microplan/StructureDefinition/CampaignLocation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Group.type",
+        "path": "Group.type",
+        "patternCode": "person"
+      },
+      {
+        "id": "Group.actual",
+        "path": "Group.actual",
+        "patternBoolean": false
+      },
+      {
+        "id": "Group.quantity",
+        "path": "Group.quantity",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Group.managingEntity",
+        "path": "Group.managingEntity",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.characteristic",
+        "path": "Group.characteristic",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

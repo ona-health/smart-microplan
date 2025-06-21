@@ -1,0 +1,29 @@
+{
+  "resourceType": "Task",
+  "id": "ExampleTaskSupervision",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-task"
+    ]
+  },
+  "status": "requested",
+  "intent": "plan",
+  "basedOn": [
+    {
+      "reference": "CarePlan/ExampleCarePlan"
+    }
+  ],
+  "focus": {
+    "reference": "ActivityDefinition/SupervisionVisit"
+  },
+  "for": {
+    "reference": "Group/ExamplePopulationDistrict"
+  },
+  "location": {
+    "reference": "Location/ExampleDistrict"
+  },
+  "executionPeriod": {
+    "start": "2025-06-22",
+    "end": "2025-06-22"
+  }
+}

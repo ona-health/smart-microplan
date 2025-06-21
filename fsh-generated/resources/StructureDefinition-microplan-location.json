@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "microplan-location",
+  "url": "http://smart.who.int/microplan/StructureDefinition/microplan-location",
+  "name": "MicroplanLocation",
+  "title": "Microplan Location",
+  "status": "draft",
+  "experimental": false,
+  "description": "A location in the immunization campaign hierarchy, from country down to vaccination site.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.name",
+        "path": "Location.name",
+        "min": 1
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS"
+        }
+      },
+      {
+        "id": "Location.position",
+        "path": "Location.position",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

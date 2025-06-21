@@ -1,0 +1,22 @@
+{
+  "resourceType": "Location",
+  "id": "ExampleCountry",
+  "meta": {
+    "profile": [
+      "http://smart.who.int/microplan/StructureDefinition/microplan-location"
+    ]
+  },
+  "name": "Wakanda",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "country",
+          "system": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+          "display": "Country"
+        }
+      ]
+    }
+  ],
+  "status": "active"
+}

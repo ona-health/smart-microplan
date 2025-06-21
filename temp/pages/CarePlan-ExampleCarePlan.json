@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "ExampleCarePlan",
+  "meta" : {
+    "profile" : ["http://smart.who.int/microplan/StructureDefinition/microplan-careplan"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan ExampleCarePlan</b></p><a name=\"ExampleCarePlan\"> </a><a name=\"hcExampleCarePlan\"> </a><a name=\"ExampleCarePlan-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-microplan-careplan.html\">Microplan CarePlan</a></p></div><p><b>Campaign Location</b>: <a href=\"Location-ExampleDistrict.html\">Location Riverside District</a></p><p><b>instantiatesCanonical</b>: <a href=\"PlanDefinition-PolioSIACampaign.html\">Polio SIA Campaign</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Polio SIA — Riverside District, June 2025</p><p><b>subject</b>: <a href=\"Group-ExamplePopulationDistrict.html\">Group: extension = -&gt;Location Riverside District; type = person; actual = false; quantity = 1250</a></p><p><b>period</b>: 2025-06-21 --&gt; 2025-06-25</p><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"Task-ExampleTaskVaccinationAlpha.html\">Task: status = requested; intent = plan; executionPeriod = 2025-06-21 --&gt; 2025-06-21</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"Task-ExampleTaskVaccinationBeta.html\">Task: status = requested; intent = plan; executionPeriod = 2025-06-21 --&gt; 2025-06-21</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"Task-ExampleTaskSupervision.html\">Task: status = requested; intent = plan; executionPeriod = 2025-06-22 --&gt; 2025-06-22</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"Task-ExampleTaskCoverageMonitoring.html\">Task: status = requested; intent = plan; executionPeriod = 2025-06-25 --&gt; 2025-06-25</a></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://smart.who.int/microplan/StructureDefinition/CampaignLocation",
+    "valueReference" : {
+      "reference" : "Location/ExampleDistrict"
+    }
+  }],
+  "instantiatesCanonical" : ["http://smart.who.int/microplan/PlanDefinition/PolioSIACampaign"],
+  "status" : "active",
+  "intent" : "plan",
+  "title" : "Polio SIA — Riverside District, June 2025",
+  "subject" : {
+    "reference" : "Group/ExamplePopulationDistrict"
+  },
+  "period" : {
+    "start" : "2025-06-21",
+    "end" : "2025-06-25"
+  },
+  "activity" : [{
+    "reference" : {
+      "reference" : "Task/ExampleTaskVaccinationAlpha"
+    }
+  },
+  {
+    "reference" : {
+      "reference" : "Task/ExampleTaskVaccinationBeta"
+    }
+  },
+  {
+    "reference" : {
+      "reference" : "Task/ExampleTaskSupervision"
+    }
+  },
+  {
+    "reference" : {
+      "reference" : "Task/ExampleTaskCoverageMonitoring"
+    }
+  }]
+}

@@ -1,0 +1,230 @@
+{
+  "CampaignLocation" : {
+    "index" : 0,
+    "url" : "http://smart.who.int/microplan/StructureDefinition/CampaignLocation",
+    "name" : "CampaignLocation",
+    "title" : "Campaign Location",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-CampaignLocation.html",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename" : "Extension",
+    "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Mon Mar 16 13:36:19 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "WHO",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Links a resource to a location in the campaign hierarchy.",
+    "descriptionlang" : {
+    },
+    "obligations" : false,
+    "contexts" : [
+      {
+        "type" : "Element ID",
+        "expression" : "CarePlan"
+      },
+      {
+        "type" : "Element ID",
+        "expression" : "Group"
+      }
+    ],
+    "extension-contexts" : ["CarePlan", "Group", "multiple"]
+  },
+  "TargetLocationType" : {
+    "index" : 1,
+    "url" : "http://smart.who.int/microplan/StructureDefinition/TargetLocationType",
+    "name" : "TargetLocationType",
+    "title" : "Target Location Type",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-TargetLocationType.html",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename" : "Extension",
+    "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Mon Mar 16 13:36:19 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "WHO",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Specifies which level of the location hierarchy a PlanDefinition action targets for Task generation.",
+    "descriptionlang" : {
+    },
+    "obligations" : false,
+    "contexts" : [
+      {
+        "type" : "Element ID",
+        "expression" : "PlanDefinition.action"
+      }
+    ],
+    "extension-contexts" : ["PlanDefinition"]
+  },
+  "microplan-careplan" : {
+    "index" : 2,
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-careplan",
+    "name" : "MicroplanCarePlan",
+    "title" : "Microplan CarePlan",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-microplan-careplan.html",
+    "kind" : "resource",
+    "type" : "CarePlan",
+    "base" : "http://hl7.org/fhir/StructureDefinition/CarePlan",
+    "basename" : "CarePlan",
+    "basepath" : "http://hl7.org/fhir/R4/careplan.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Mon Mar 16 13:36:19 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "WHO",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "An instantiated immunization campaign for a specific geographic area and time period.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "microplan-location" : {
+    "index" : 3,
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-location",
+    "name" : "MicroplanLocation",
+    "title" : "Microplan Location",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-microplan-location.html",
+    "kind" : "resource",
+    "type" : "Location",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Location",
+    "basename" : "Location",
+    "basepath" : "http://hl7.org/fhir/R4/location.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Mon Mar 16 13:36:19 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "WHO",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "A location in the immunization campaign hierarchy, from country down to vaccination site.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "microplan-plandefinition" : {
+    "index" : 4,
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition",
+    "name" : "MicroplanPlanDefinition",
+    "title" : "Microplan PlanDefinition",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-microplan-plandefinition.html",
+    "kind" : "resource",
+    "type" : "PlanDefinition",
+    "base" : "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+    "basename" : "PlanDefinition",
+    "basepath" : "http://hl7.org/fhir/R4/plandefinition.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Mon Mar 16 13:36:19 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "WHO",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "A campaign template that defines activities and which location hierarchy levels they target.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "microplan-target-population" : {
+    "index" : 5,
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-target-population",
+    "name" : "MicroplanTargetPopulation",
+    "title" : "Microplan Target Population",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-microplan-target-population.html",
+    "kind" : "resource",
+    "type" : "Group",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Group",
+    "basename" : "Group",
+    "basepath" : "http://hl7.org/fhir/R4/group.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Mon Mar 16 13:36:19 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "WHO",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Estimated target population for vaccination at a specific location.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "microplan-task" : {
+    "index" : 6,
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-task",
+    "name" : "MicroplanTask",
+    "title" : "Microplan Task",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-microplan-task.html",
+    "kind" : "resource",
+    "type" : "Task",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Task",
+    "basename" : "Task",
+    "basepath" : "http://hl7.org/fhir/R4/task.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Mon Mar 16 13:36:19 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "WHO",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "A concrete campaign activity assigned to a team at a specific location and time.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  }
+}

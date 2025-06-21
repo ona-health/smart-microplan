@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="PolioSIACampaign"/>
+  <meta>
+    <profile value="http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">PolioSIACampaign</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="PlanDefinition-PolioSIACampaign.html">Polio SIA Campaign</a></td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">0.1.0</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Title: </b></th>
+            <td style="padding-left: 4px;">Polio SIA Campaign</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Status: </b></th>
+            <td style="padding-left: 4px;">draft</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/7.1.0/CodeSystem-plan-definition-type.html">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>clinical-protocol</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2025-06-21</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Publisher: </b></th>
+            <td style="padding-left: 4px;">WHO</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Description: </b></th>
+            <td style="padding-left: 4px;"><div><p>Supplementary Immunization Activity for oral polio vaccine (bOPV) targeting children aged 0–59 months.</p>
+</div></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Actions: </b></th>
+            <td style="padding-left: 4px;">
+                <table class="grid-dict">
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Vaccination Session:</b> Conduct bOPV vaccination session at vaccination site for all children 0–59 months.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            <b>Then:</b> <i>Definition:</i> <a href="ActivityDefinition-PolioVaccinationSession.html">Polio Vaccination Session</a><br/>
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Supervision Visit:</b> Supervisor visits vaccination sites to monitor campaign execution and provide support.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            <b>Then:</b> <i>Definition:</i> <a href="ActivityDefinition-SupervisionVisit.html">Supervision Visit</a><br/>
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Rapid Coverage Monitoring:</b> Post-campaign rapid assessment of vaccination coverage at health facility catchment areas.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            <b>Then:</b> <i>Definition:</i> <a href="ActivityDefinition-CoverageMonitoring.html">Rapid Coverage Monitoring</a><br/>
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+</div>
+  </text>
+  <url value="http://smart.who.int/microplan/PlanDefinition/PolioSIACampaign"/>
+  <version value="0.1.0"/>
+  <title value="Polio SIA Campaign"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="clinical-protocol"/>
+    </coding>
+  </type>
+  <status value="draft"/>
+  <date value="2025-06-21"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Supplementary Immunization Activity for oral polio vaccine (bOPV) targeting children aged 0–59 months."/>
+  <goal>
+    <description>
+      <text value="Achieve at least 95% OPV coverage in children 0–59 months in the target area."/>
+    </description>
+  </goal>
+  <action>
+    <extension url="http://smart.who.int/microplan/StructureDefinition/TargetLocationType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+          <code value="vaccination-site"/>
+          <display value="Vaccination Site"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <title value="Vaccination Session"/>
+    <description value="Conduct bOPV vaccination session at vaccination site for all children 0–59 months."/>
+    <participant>
+      <type value="practitioner"/>
+      <role>
+        <coding>
+          <system value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"/>
+          <code value="vaccination-team"/>
+          <display value="Vaccination Team"/>
+        </coding>
+      </role>
+    </participant>
+    <definitionCanonical value="http://smart.who.int/microplan/ActivityDefinition/PolioVaccinationSession"/>
+  </action>
+  <action>
+    <extension url="http://smart.who.int/microplan/StructureDefinition/TargetLocationType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+          <code value="district"/>
+          <display value="District"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <title value="Supervision Visit"/>
+    <description value="Supervisor visits vaccination sites to monitor campaign execution and provide support."/>
+    <participant>
+      <type value="practitioner"/>
+      <role>
+        <coding>
+          <system value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"/>
+          <code value="supervisor"/>
+          <display value="Supervisor"/>
+        </coding>
+      </role>
+    </participant>
+    <definitionCanonical value="http://smart.who.int/microplan/ActivityDefinition/SupervisionVisit"/>
+  </action>
+  <action>
+    <extension url="http://smart.who.int/microplan/StructureDefinition/TargetLocationType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS"/>
+          <code value="health-facility"/>
+          <display value="Health Facility"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <title value="Rapid Coverage Monitoring"/>
+    <description value="Post-campaign rapid assessment of vaccination coverage at health facility catchment areas."/>
+    <relatedAction>
+      <actionId value="vaccination-session"/>
+      <relationship value="after"/>
+    </relatedAction>
+    <participant>
+      <type value="practitioner"/>
+      <role>
+        <coding>
+          <system value="http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS"/>
+          <code value="monitoring-team"/>
+          <display value="Monitoring Team"/>
+        </coding>
+      </role>
+    </participant>
+    <definitionCanonical value="http://smart.who.int/microplan/ActivityDefinition/CoverageMonitoring"/>
+  </action>
+</PlanDefinition>

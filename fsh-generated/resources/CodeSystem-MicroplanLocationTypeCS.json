@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "MicroplanLocationTypeCS",
+  "id": "MicroplanLocationTypeCS",
+  "title": "Microplan Location Type CodeSystem",
+  "description": "Administrative levels in the immunization campaign location hierarchy.",
+  "url": "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+  "concept": [
+    {
+      "code": "country",
+      "display": "Country",
+      "definition": "National level"
+    },
+    {
+      "code": "province",
+      "display": "Province",
+      "definition": "Province or region level"
+    },
+    {
+      "code": "district",
+      "display": "District",
+      "definition": "District level"
+    },
+    {
+      "code": "health-facility",
+      "display": "Health Facility",
+      "definition": "Health facility or health center"
+    },
+    {
+      "code": "vaccination-site",
+      "display": "Vaccination Site",
+      "definition": "Point of vaccination delivery (fixed post, transit point, house-to-house team area)"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 5
+}

@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Group-ExamplePopulationSiteBeta-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/group.html#Group">resourceType</a>" : "Group",
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.id">id</a>" : "ExamplePopulationSiteBeta",
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-microplan-target-population.html" style="color: Maroon">&#x1F517;</a> "http://smart.who.int/microplan/StructureDefinition/microplan-target-population"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Group ExamplePopulationSiteBeta&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ExamplePopulationSiteBeta\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExamplePopulationSiteBeta\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ExamplePopulationSiteBeta-en-US\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-microplan-target-population.html\&quot;&gt;Microplan Target Population&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Campaign Location&lt;/b&gt;: &lt;a href=\&quot;Location-ExampleSiteBeta.html\&quot;&gt;Location Site Beta — Riverside Ward 3&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Person&lt;/p&gt;&lt;p&gt;&lt;b&gt;actual&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 750&lt;/p&gt;&lt;h3&gt;Characteristics&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Exclude&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/usage-context-type age}\&quot;&gt;Age Range&lt;/span&gt;&lt;/td&gt;&lt;td&gt;0-59 months&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://smart.who.int/microplan/StructureDefinition/CampaignLocation",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+        <a href="Location-ExampleSiteBeta.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/ExampleSiteBeta"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.type">type</a>" : "person",
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.actual">actual</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.quantity">quantity</a>" : 750,
+  "<a href="http://hl7.org/fhir/R4/group.html#Group.characteristic">characteristic</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/group.html#Group.characteristic.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "age",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Age Range"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/group.html#Group.characteristic.value[x]">valueRange</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Range#Range.low">low</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 0,
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "months",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mo"
+        },
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Range#Range.high">high</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 59,
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "months",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mo"
+        }
+      },
+      "<a href="http://hl7.org/fhir/R4/group.html#Group.characteristic.exclude">exclude</a>" : false
+    }
+  ]
+}</code></pre>
+</body>
+</html>

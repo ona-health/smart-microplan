@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS,0.1.0,draft,,MicroplanActivityTypeVS,Microplan Activity Type ValueSet,"Types of activities performed during an immunization campaign.",,"Internal"
+http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS,0.1.0,draft,,MicroplanLocationTypeVS,Microplan Location Type ValueSet,"Administrative levels in the immunization campaign location hierarchy.","StructureDefinition/microplan-location,StructureDefinition/TargetLocationType","Internal"
+http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS,0.1.0,draft,,MicroplanParticipantRoleVS,Microplan Participant Role ValueSet,"Roles of participants in immunization campaign activities.",,"Internal"

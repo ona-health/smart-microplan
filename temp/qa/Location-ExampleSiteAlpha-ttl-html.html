@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Location-ExampleSiteAlpha-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Location ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/location.html#Location.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;ExampleSiteAlpha&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/microplan/StructureDefinition/microplan-location&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/microplan/StructureDefinition/microplan-location&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Location ExampleSiteAlpha&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ExampleSiteAlpha\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExampleSiteAlpha\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ExampleSiteAlpha-en-US\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-microplan-location.html\&quot;&gt;Microplan Location&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Site Alpha — Riverside Market&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS vaccination-site}\&quot;&gt;Vaccination Site&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Positions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Latitude&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;36.8219&lt;/td&gt;&lt;td&gt;-1.2921&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;Location-ExampleFacility.html\&quot;&gt;Location Riverside Health Center&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Site Alpha — Riverside Market&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.type">fhir:type</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;vaccination-site&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vaccination Site&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.position">fhir:position</a> [
+<a href="http://hl7.org/fhir/R4/location.html#Location.position.longitude">fhir:longitude</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> 36.8219 ] ;
+<a href="http://hl7.org/fhir/R4/location.html#Location.position.latitude">fhir:latitude</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> -1.2921 ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.partOf">fhir:partOf</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Location/ExampleFacility&quot; ]
+  ] . # 
+
+</code></pre>
+
+</body>
+</html>

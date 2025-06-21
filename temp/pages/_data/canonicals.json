@@ -1,0 +1,124 @@
+[
+  {
+    "id" : "CoverageMonitoring",
+    "type" : "ActivityDefinition",
+    "url" : "http://smart.who.int/microplan/ActivityDefinition/CoverageMonitoring",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "PolioVaccinationSession",
+    "type" : "ActivityDefinition",
+    "url" : "http://smart.who.int/microplan/ActivityDefinition/PolioVaccinationSession",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "SupervisionVisit",
+    "type" : "ActivityDefinition",
+    "url" : "http://smart.who.int/microplan/ActivityDefinition/SupervisionVisit",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "MicroplanActivityTypeCS",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanActivityTypeCS",
+    "version" : "0.1.0",
+    "name" : "MicroplanActivityTypeCS"
+  },
+  {
+    "id" : "MicroplanLocationTypeCS",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanLocationTypeCS",
+    "version" : "0.1.0",
+    "name" : "MicroplanLocationTypeCS"
+  },
+  {
+    "id" : "MicroplanParticipantRoleCS",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/microplan/CodeSystem/MicroplanParticipantRoleCS",
+    "version" : "0.1.0",
+    "name" : "MicroplanParticipantRoleCS"
+  },
+  {
+    "id" : "smart.who.int.microplan",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/microplan/ImplementationGuide/smart.who.int.microplan",
+    "version" : "0.1.0",
+    "name" : "Microplan"
+  },
+  {
+    "id" : "PolioSIACampaign",
+    "type" : "PlanDefinition",
+    "url" : "http://smart.who.int/microplan/PlanDefinition/PolioSIACampaign",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "CampaignLocation",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/CampaignLocation",
+    "version" : "0.1.0",
+    "name" : "CampaignLocation"
+  },
+  {
+    "id" : "TargetLocationType",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/TargetLocationType",
+    "version" : "0.1.0",
+    "name" : "TargetLocationType"
+  },
+  {
+    "id" : "microplan-careplan",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-careplan",
+    "version" : "0.1.0",
+    "name" : "MicroplanCarePlan"
+  },
+  {
+    "id" : "microplan-location",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-location",
+    "version" : "0.1.0",
+    "name" : "MicroplanLocation"
+  },
+  {
+    "id" : "microplan-plandefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-plandefinition",
+    "version" : "0.1.0",
+    "name" : "MicroplanPlanDefinition"
+  },
+  {
+    "id" : "microplan-target-population",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-target-population",
+    "version" : "0.1.0",
+    "name" : "MicroplanTargetPopulation"
+  },
+  {
+    "id" : "microplan-task",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/microplan/StructureDefinition/microplan-task",
+    "version" : "0.1.0",
+    "name" : "MicroplanTask"
+  },
+  {
+    "id" : "MicroplanActivityTypeVS",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/microplan/ValueSet/MicroplanActivityTypeVS",
+    "version" : "0.1.0",
+    "name" : "MicroplanActivityTypeVS"
+  },
+  {
+    "id" : "MicroplanLocationTypeVS",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/microplan/ValueSet/MicroplanLocationTypeVS",
+    "version" : "0.1.0",
+    "name" : "MicroplanLocationTypeVS"
+  },
+  {
+    "id" : "MicroplanParticipantRoleVS",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/microplan/ValueSet/MicroplanParticipantRoleVS",
+    "version" : "0.1.0",
+    "name" : "MicroplanParticipantRoleVS"
+  }
+]

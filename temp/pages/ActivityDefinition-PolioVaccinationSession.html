@@ -1,0 +1,47 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='ActivityDefinition' id='PolioVaccinationSession' active='content' %}
+  <a name="root"> </a>
+
+  <h2 id="root">ActivityDefinition: {{site.data.pages[page.path].title | escape_once}}
+{% if site.data.resources[resource_].experimental == true %}(Experimental){% endif %}
+  </h2>
+
+{% include fragment-resourceTable.html %}
+
+{%if site.data.resources[resource_].description %}
+<p>
+{{site.data.resources[resource_].description|markdownify}}
+</p>
+{% endif %}
+{%if site.data.resources[resource_].purpose %}
+<p>
+{{site.data.resources[resource_].purpose|markdownify}}
+</p>
+{% endif %}
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='ActivityDefinition' id='PolioVaccinationSession' %}
+
+<!--  <p>
+  Formats: <a href="ActivityDefinition-PolioVaccinationSession.xml.html">XML</a>, <a href="ActivityDefinition-PolioVaccinationSession.json.html">JSON</a>, <a href="ActivityDefinition-PolioVaccinationSession.ttl.html">Turtle</a>
+  </p>-->
+{% unless example %}
+  {% if 'ActivityDefinition' == 'CapabilityStatement' %}
+  <p>
+      <a href="PolioVaccinationSession.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="PolioVaccinationSession.openapi.json" download>Download</a>
+  </p>
+  {% endif %}
+{% endunless %}
+
+  {% include ActivityDefinition-PolioVaccinationSession-html.xhtml %}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='ActivityDefinition' id='PolioVaccinationSession' %}
+
+  {%include ActivityDefinition-PolioVaccinationSession-history.xhtml%}
+
+</div>
+{% include fragment-pageend.html %}

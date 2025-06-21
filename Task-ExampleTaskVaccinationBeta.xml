@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="ExampleTaskVaccinationBeta"/>
+  <meta>
+    <profile value="http://smart.who.int/microplan/StructureDefinition/microplan-task"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task ExampleTaskVaccinationBeta</b></p><a name="ExampleTaskVaccinationBeta"> </a><a name="hcExampleTaskVaccinationBeta"> </a><a name="ExampleTaskVaccinationBeta-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-microplan-task.html">Microplan Task</a></p></div><p><b>basedOn</b>: <a href="CarePlan-ExampleCarePlan.html">CarePlan Polio SIA — Riverside District, June 2025</a></p><p><b>status</b>: Requested</p><p><b>intent</b>: plan</p><p><b>focus</b>: <a href="ActivityDefinition-PolioVaccinationSession.html">Polio Vaccination Session</a></p><p><b>for</b>: <a href="Group-ExamplePopulationSiteBeta.html">Group: extension = -&gt;Location Site Beta — Riverside Ward 3; type = person; actual = false; quantity = 750</a></p><p><b>executionPeriod</b>: 2025-06-21 --&gt; 2025-06-21</p><p><b>location</b>: <a href="Location-ExampleSiteBeta.html">Location Site Beta — Riverside Ward 3</a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes:">vaccine</span></p><p><b>value</b>: bOPV</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title="Codes:">target-count</span></p><p><b>value</b>: 750</p></blockquote></div>
+  </text>
+  <basedOn>
+    <reference value="CarePlan/ExampleCarePlan"/>
+  </basedOn>
+  <status value="requested"/>
+  <intent value="plan"/>
+  <focus>
+    <reference value="ActivityDefinition/PolioVaccinationSession"/>
+  </focus>
+  <for>
+    <reference value="Group/ExamplePopulationSiteBeta"/>
+  </for>
+  <executionPeriod>
+    <start value="2025-06-21"/>
+    <end value="2025-06-21"/>
+  </executionPeriod>
+  <location>
+    <reference value="Location/ExampleSiteBeta"/>
+  </location>
+  <input>
+    <type>
+      <text value="vaccine"/>
+    </type>
+    <valueString value="bOPV"/>
+  </input>
+  <input>
+    <type>
+      <text value="target-count"/>
+    </type>
+    <valueInteger value="750"/>
+  </input>
+</Task>
