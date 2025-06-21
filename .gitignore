@@ -1,0 +1,13 @@
+output
+fsh-generated
+input-cache
+temp
+template
+*.jar
+.DS_Store
+node_modules/
+.vscode/
+.idea/
+__pycache__/
+*.bak
+*~
