@@ -41,6 +41,52 @@ The Polio SIA campaign template defines three activities:
 This IG depends on:
 - [HL7 Clinical Practice Guidelines (CPG)](http://hl7.org/fhir/uv/cpg/)
 
+### Profiles
+
+| Profile | Based On | Description |
+|---|---|---|
+| [Microplan PlanDefinition](StructureDefinition-microplan-plandefinition.html) | PlanDefinition | Campaign template with level-targeted actions |
+| [Microplan CarePlan](StructureDefinition-microplan-careplan.html) | CarePlan | Instantiated campaign for a geographic area |
+| [Microplan Task](StructureDefinition-microplan-task.html) | Task | Concrete activity at a specific location and time |
+| [Microplan Location](StructureDefinition-microplan-location.html) | Location | Location in the campaign hierarchy |
+| [Microplan Target Population](StructureDefinition-microplan-target-population.html) | Group | Estimated target population at a location |
+
+### Extensions
+
+| Extension | Context | Description |
+|---|---|---|
+| [Target Location Type](StructureDefinition-TargetLocationType.html) | PlanDefinition.action | Which hierarchy level an action generates Tasks at |
+| [Campaign Location](StructureDefinition-CampaignLocation.html) | CarePlan, Group | Links a resource to a campaign Location |
+
+### Activity Definitions
+
+| Activity | Description |
+|---|---|
+| [Polio Vaccination Session](ActivityDefinition-PolioVaccinationSession.html) | Administer bOPV at vaccination sites |
+| [Supervision Visit](ActivityDefinition-SupervisionVisit.html) | Monitor campaign execution at district level |
+| [Rapid Coverage Monitoring](ActivityDefinition-CoverageMonitoring.html) | Post-campaign coverage assessment |
+
+### Terminology
+
+| Resource | Description |
+|---|---|
+| [Location Type CodeSystem](CodeSystem-MicroplanLocationTypeCS.html) | Campaign location hierarchy levels |
+| [Activity Type CodeSystem](CodeSystem-MicroplanActivityTypeCS.html) | Types of campaign activities |
+| [Participant Role CodeSystem](CodeSystem-MicroplanParticipantRoleCS.html) | Roles of campaign participants |
+
+### Examples
+
+| Resource | Description |
+|---|---|
+| [Polio SIA Campaign](PlanDefinition-PolioSIACampaign.html) | Campaign template for Polio SIA |
+| [Polio SIA — Riverside District](CarePlan-ExampleCarePlan.html) | Instantiated campaign |
+| [Vaccination — Site Alpha](Task-ExampleTaskVaccinationAlpha.html) | Vaccination task at a site |
+| [Vaccination — Site Beta](Task-ExampleTaskVaccinationBeta.html) | Vaccination task at a site |
+| [Supervision — Riverside District](Task-ExampleTaskSupervision.html) | Supervision task |
+| [Coverage Monitoring — Riverside HC](Task-ExampleTaskCoverageMonitoring.html) | Coverage monitoring task |
+| [Location Hierarchy](Location-ExampleCountry.html) | Country → Province → District → Facility → Sites |
+| [Target Population — Site Alpha](Group-ExamplePopulationSiteAlpha.html) | Estimated 500 children |
+
 ### Artifact Index
 
 For a complete listing of artifacts defined in this guide, see the [Artifact Index](artifacts.html).
